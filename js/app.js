@@ -166,6 +166,7 @@
       <div class="block">
         <h4><span class="bar"></span>${T("label_notes")}</h4>
         ${notesHtml}
+        <div id="fullnotes-box"></div>
       </div>
       <div class="block">
         <h4><span class="bar"></span>${T("label_appr")}</h4>
@@ -186,17 +187,32 @@
     });
 
     // 朗读
-    $("#spk-lines").onclick = () => speak(p.lines.join("。"));
-    $("#spk-full").onclick = () => speak(p.full.join("。"));
+    $("#spk-lines").onclick = () => playPoem(p, "lines");
+    $("#spk-full").onclick = () => playPoem(p, "full");
     $("#spk-stop").onclick = stopSpeak;
   }
 
+  const CHAP = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+  function chapName(i) { return "其" + (CHAP[i] || String(i + 1)); }
+  function fullNotesHtml(p) {
+    const fn = p.fullNotes || [];
+    if (!fn.length) return "";
+    return `<div class="fullnotes"><div class="fn-title">${T("label_fullnotes")}</div>` +
+      fn.map((t, i) => `<div class="fn-item"><span class="fn-chap">${chapName(i)}</span><span class="fn-text">${t}</span></div>`).join("") +
+      `</div>`;
+  }
   function showView(mode) {
     const p = curPoem;
     const box = $("#orig-box");
     if (!box || !p) return;
-    const arr = mode === "full" ? p.full : p.lines;
-    box.innerHTML = arr.map((l) => `<div class="ln">${l}</div>`).join("");
+    box.className = "orig " + (mode === "full" ? "mode-full" : "mode-lines");
+    if (mode === "full") {
+      box.innerHTML = p.full.map((c, i) => `<div class="chap">${chapName(i)}</div><div class="ln">${c}</div>`).join("");
+    } else {
+      box.innerHTML = p.lines.map((l) => `<div class="ln">${l}</div>`).join("");
+    }
+    const fb = $("#fullnotes-box");
+    if (fb) fb.innerHTML = mode === "full" ? fullNotesHtml(p) : "";
   }
 
   function closePoem() {
@@ -230,7 +246,24 @@
     u.rate = 0.82;
     synth.speak(u);
   }
-  function stopSpeak() { if (synth) synth.cancel(); }
+  function stopSpeak() {
+    if (synth) synth.cancel();
+    if (curAudio) { try { curAudio.pause(); } catch (e) {} curAudio = null; }
+  }
+
+  // 朗读：优先播放预生成的真人级音频（Edge TTS 女声），失败降级到系统语音
+  let curAudio = null;
+  function playPoem(p, mode) {
+    const url = "audio/p" + p.id + "_" + mode + ".mp3";
+    const text = (mode === "full" ? p.full : p.lines).join("。");
+    if (curAudio) { try { curAudio.pause(); } catch (e) {} curAudio = null; }
+    const a = new Audio(url);
+    curAudio = a;
+    a.onerror = function () { fallbackSpeak(text); };
+    const pr = a.play();
+    if (pr && pr.catch) pr.catch(function () { fallbackSpeak(text); });
+  }
+  function fallbackSpeak(text) { speak(text); }
 
   /* ---------- 五大主题 ---------- */
   const themeList = $("#theme-list");
