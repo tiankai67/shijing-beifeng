@@ -1,28 +1,50 @@
-// ===== 诗经·邶风 交互逻辑 =====
+// ===== 诗经·邶风 交互逻辑（含 全文/名句切换 · 朗读 · 中英切换）=====
 (function () {
   "use strict";
 
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   const themeColor = (k) => (THEMES.find((t) => t.key === k) || {}).color || "#7a5230";
+  const themeName = (k) => {
+    const t = THEMES.find((x) => x.key === k);
+    if (!t) return k;
+    return (LANG === "en" && t.nameEn) ? t.nameEn : t.key;
+  };
 
-  /* 文化渊源 */
-  $("#c-intro").textContent = CULTURE.intro;
-  $("#c-beicheng").textContent = CULTURE.beicheng;
-  $("#c-history").textContent = CULTURE.history;
-  $("#c-sansheng").textContent = CULTURE.sansheng;
-  $("#c-love").textContent = CULTURE.love;
-  $("#c-relics").textContent = CULTURE.relics;
+  let LANG = "zh";
+  const T = (k) => (I18N[LANG] && I18N[LANG][k] != null) ? I18N[LANG][k] : (I18N.zh[k] != null ? I18N.zh[k] : k);
+  // 取诗篇字段：英文模式优先 en 对象
+  const pf = (p, zhKey, enKey) => {
+    if (LANG === "en" && p.en && p.en[enKey] != null) return p.en[enKey];
+    return p[zhKey];
+  };
+  const cn = (n) => {
+    const s = ["零","一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十"];
+    return s[n] || n;
+  };
 
-  /* 过滤器 */
+  /* ---------- 文化渊源 ---------- */
+  function renderCulture() {
+    const C = LANG === "en" ? CULTURE.en : CULTURE;
+    $("#c-intro").textContent = C.intro;
+    $("#c-beicheng").textContent = C.beicheng;
+    $("#c-history").textContent = C.history;
+    $("#c-sansheng").textContent = C.sansheng;
+    $("#c-love").textContent = C.love;
+    $("#c-relics").textContent = C.relics;
+  }
+
+  /* ---------- 过滤器 ---------- */
   const filtersEl = $("#filters");
   let activeTheme = "全部";
   let keyword = "";
 
-  const allOpt = mkChip("全部", true);
-  filtersEl.appendChild(allOpt);
-  THEMES.forEach((t) => filtersEl.appendChild(mkChip(t.key, false)));
-
+  function buildFilters() {
+    filtersEl.innerHTML = "";
+    const allOpt = mkChip(T("all"), true);
+    filtersEl.appendChild(allOpt);
+    THEMES.forEach((t) => filtersEl.appendChild(mkChip(themeName(t.key), false)));
+  }
   function mkChip(label, active) {
     const c = document.createElement("div");
     c.className = "chip" + (active ? " active" : "");
@@ -41,25 +63,25 @@
     renderPoems();
   });
 
-  /* 诗篇卡片 */
+  /* ---------- 诗篇卡片 ---------- */
   const listEl = $("#poem-list");
 
   function poemExcerpt(p) {
-    if (p.sensitive) return "（原文从略 · 文旅建议慎选）";
-    return p.lines.join("　");
+    const arr = pf(p, "lines", "lines");
+    return arr.join("　");
   }
 
   function renderPoems() {
     const kw = keyword.toLowerCase();
     const items = POEMS.filter((p) => {
       const okTheme = activeTheme === "全部" || p.theme === activeTheme;
-      const hay = (p.title + p.lines.join("") + p.trans + p.theme).toLowerCase();
+      const hay = (p.title + pf(p, "lines", "lines").join("") + pf(p, "trans", "trans") + p.theme).toLowerCase();
       const okKw = !kw || hay.includes(kw);
       return okTheme && okKw;
     });
     listEl.innerHTML = "";
     if (!items.length) {
-      listEl.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-faint);">未找到匹配的诗篇。</p>';
+      listEl.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--ink-faint);">${T("no_match")}</p>`;
       return;
     }
     items.forEach((p) => {
@@ -67,11 +89,11 @@
       card.className = "poem-card";
       const stars = p.recommend ? "★".repeat(p.recommend) : "";
       card.innerHTML = `
-        <div class="idx">邶风 · 其${cn(p.id)}</div>
+        <div class="idx">${T("its")}${cn(p.id)}</div>
         <div class="pt">${p.title}</div>
         <div class="ex">${poemExcerpt(p)}</div>
         <div class="meta">
-          <span class="theme-tag" style="background:${themeColor(p.theme)}">${p.theme}</span>
+          <span class="theme-tag" style="background:${themeColor(p.theme)}">${themeName(p.theme)}</span>
           ${p.sensitive ? '<span class="seal mini">慎</span>' : (stars ? `<span class="stars">${stars}</span>` : '<span class="seal mini">邶</span>')}
         </div>`;
       card.onclick = () => openPoem(p.id);
@@ -79,63 +101,106 @@
     });
   }
 
-  function cn(n) {
-    const s = ["零","一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十"];
-    return s[n] || n;
-  }
-
-  /* 诗篇详情 卷轴 */
+  /* ---------- 诗篇详情 卷轴 ---------- */
   const overlay = $("#overlay");
   const body = $("#scroll-body");
+  let curPoem = null;
 
   function openPoem(id) {
     const p = POEMS.find((x) => x.id === id);
     if (!p) return;
-    const color = themeColor(p.theme);
-    const origLines = p.sensitive
-      ? ["（原文从略）"]
-      : p.lines;
-    const notesHtml = p.notes.length
-      ? `<div class="notes-list">${p.notes
-          .map((n) => `<div class="note-item"><b>${n.w}</b><span class="p">${n.p}</span>　${n.m}</div>`)
-          .join("")}</div>`
-      : '<p class="appr">本篇未列详细注释，可查阅《诗经》注本深入学习。</p>';
-
-    const warn = p.sensitive ? `<span class="warn">文旅建议：慎选 · ${p.note || ""}</span>` : "";
-
-    body.innerHTML = `
-      <div class="detail-head">
-        <span class="no">邶风 · 其${cn(p.id)}</span>
-        <h2>${p.title}</h2>
-        <span class="py">${p.pinyin || ""}</span>
-      </div>
-      <div class="detail-tags">
-        <span class="theme-tag" style="background:${color}">${p.theme}</span>
-        ${warn}
-      </div>
-      <div class="poem-split">
-        <div class="orig">${origLines.map((l) => `<div class="ln">${l}</div>`).join("")}</div>
-        <div class="trans">
-          <span class="tlabel">【译文】</span>${p.trans}
-        </div>
-      </div>
-      <div class="block">
-        <h4><span class="bar"></span>注释</h4>
-        ${notesHtml}
-      </div>
-      <div class="block">
-        <h4><span class="bar"></span>赏析</h4>
-        <p class="appr">${p.appreciation}</p>
-      </div>
-      <div class="block">
-        <h4><span class="bar"></span>适用场景</h4>
-        <p class="scene">${p.scene}</p>
-      </div>`;
+    curPoem = p;
+    renderDetail();
     overlay.classList.add("show");
     document.body.style.overflow = "hidden";
   }
 
+  function renderDetail() {
+    const p = curPoem;
+    if (!p) return;
+    const color = themeColor(p.theme);
+    const lines = pf(p, "lines", "lines");
+    const full = pf(p, "full", "full");
+    const trans = pf(p, "trans", "trans");
+    const appr = pf(p, "appreciation", "appreciation");
+    const notes = LANG === "en" ? p.en.notes : p.notes;
+
+    const notesHtml = notes.length
+      ? `<div class="notes-list">${notes.map((n) => `<div class="note-item"><b>${n.w}</b><span class="p">${n.p}</span>　${n.m}</div>`).join("")}</div>`
+      : `<p class="appr">${T("label_notes")}…</p>`;
+
+    const warn = p.sensitive ? `<span class="warn">${T("warn_prefix")}${p.note || ""}</span>` : "";
+    // 适用场景：仅非敏感篇展示
+    const sceneHtml = (!p.sensitive && p.scene)
+      ? `<div class="block"><h4><span class="bar"></span>${T("label_scene")}</h4><p class="scene">${p.scene}</p></div>`
+      : "";
+
+    body.innerHTML = `
+      <div class="detail-head">
+        <span class="no">${T("its")}${cn(p.id)}</span>
+        <h2>${p.title}</h2>
+        <span class="py">${p.pinyin || ""}</span>
+      </div>
+      <div class="detail-tags">
+        <span class="theme-tag" style="background:${color}">${themeName(p.theme)}</span>
+        ${warn}
+      </div>
+
+      <div class="detail-tools">
+        <div class="seg" id="view-seg">
+          <button data-view="lines" class="active">${T("label_lines")}</button>
+          <button data-view="full">${T("label_full")}</button>
+        </div>
+        <div class="speak-btns">
+          <button id="spk-lines" class="speak-btn">🔊 ${T("read_lines")}</button>
+          <button id="spk-full" class="speak-btn">🔊 ${T("read_full")}</button>
+          <button id="spk-stop" class="speak-btn stop">⏹ ${T("read_stop")}</button>
+        </div>
+      </div>
+
+      <div class="poem-split">
+        <div class="orig" id="orig-box"></div>
+        <div class="trans"><span class="tlabel">${T("label_trans")}</span>${trans}</div>
+      </div>
+
+      <div class="block">
+        <h4><span class="bar"></span>${T("label_notes")}</h4>
+        ${notesHtml}
+      </div>
+      <div class="block">
+        <h4><span class="bar"></span>${T("label_appr")}</h4>
+        <p class="appr">${appr}</p>
+      </div>
+      ${sceneHtml}`;
+
+    // 默认显示名句
+    showView("lines");
+
+    // 视图切换
+    $$("#view-seg button").forEach((b) => {
+      b.onclick = () => {
+        $$("#view-seg button").forEach((x) => x.classList.remove("active"));
+        b.classList.add("active");
+        showView(b.getAttribute("data-view"));
+      };
+    });
+
+    // 朗读
+    $("#spk-lines").onclick = () => speak(p.lines.join("。"));
+    $("#spk-full").onclick = () => speak(p.full.join("。"));
+    $("#spk-stop").onclick = stopSpeak;
+  }
+
+  function showView(mode) {
+    const p = curPoem;
+    const box = $("#orig-box");
+    if (!box || !p) return;
+    const arr = mode === "full" ? p.full : p.lines;
+    box.innerHTML = arr.map((l) => `<div class="ln">${l}</div>`).join("");
+  }
+
   function closePoem() {
+    stopSpeak();
     overlay.classList.remove("show");
     document.body.style.overflow = "";
   }
@@ -143,42 +208,70 @@
   overlay.onclick = (e) => { if (e.target === overlay) closePoem(); };
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closePoem(); });
 
-  /* 五大主题 */
+  /* ---------- 柔美女声朗读（Web Speech API） ---------- */
+  const synth = window.speechSynthesis;
+  let voices = [];
+  function loadVoices() { if (synth) voices = synth.getVoices() || []; }
+  if (synth) { loadVoices(); synth.onvoiceschanged = loadVoices; }
+  function pickZhVoice() {
+    if (!voices.length) loadVoices();
+    const zh = voices.filter((v) => /zh|cmn|chinese|中文|普通话/i.test(v.lang + " " + v.name));
+    const female = zh.filter((v) => /female|女|xiao|ya|hui|ting|mei|yun|shan/i.test(v.name));
+    return female[0] || zh[0] || null;
+  }
+  function speak(text) {
+    if (!synth) { alert("当前浏览器不支持语音朗读"); return; }
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    const v = pickZhVoice();
+    if (v) { u.voice = v; u.lang = v.lang || "zh-CN"; }
+    else u.lang = "zh-CN";
+    u.pitch = 1.35;   // 柔美
+    u.rate = 0.82;
+    synth.speak(u);
+  }
+  function stopSpeak() { if (synth) synth.cancel(); }
+
+  /* ---------- 五大主题 ---------- */
   const themeList = $("#theme-list");
   const themeIcons = { "爱情之美": "愛", "亲情之厚": "孝", "乡愁之深": "思", "品格之坚": "志", "自然之韵": "風", "讽喻怨刺": "刺" };
-  THEMES.forEach((t) => {
-    const cnt = POEMS.filter((p) => p.theme === t.key).length;
-    const el = document.createElement("div");
-    el.className = "theme-card";
-    el.innerHTML = `
-      <div class="ic" style="background:${t.color}">${themeIcons[t.key] || "·"}</div>
-      <h4>${t.key}</h4>
-      <p>${t.desc}</p>
-      <div class="cnt">共 ${cnt} 篇</div>`;
-    themeList.appendChild(el);
-  });
+  function renderThemes() {
+    themeList.innerHTML = "";
+    THEMES.forEach((t) => {
+      const cnt = POEMS.filter((p) => p.theme === t.key).length;
+      const el = document.createElement("div");
+      el.className = "theme-card";
+      el.innerHTML = `
+        <div class="ic" style="background:${t.color}">${themeIcons[t.key] || "·"}</div>
+        <h4>${themeName(t.key)}</h4>
+        <p>${LANG === "en" ? t.descEn : t.desc}</p>
+        <div class="cnt">${T("theme_cnt").replace("X", cnt)}</div>`;
+      themeList.appendChild(el);
+    });
+  }
 
-  /* 文旅推荐 */
+  /* ---------- 文旅推荐 ---------- */
   const hlList = $("#hl-list");
-  HIGHLIGHTS.forEach((h) => {
-    const el = document.createElement("div");
-    el.className = "hl-card";
-    el.innerHTML = `
-      <div class="verse">${h.text}</div>
-      <div class="from">${h.from}</div>
-      <div class="why">${h.why}</div>
-      <div class="star">${"★".repeat(h.star)}</div>`;
-    hlList.appendChild(el);
-  });
+  function renderHighlights() {
+    hlList.innerHTML = "";
+    HIGHLIGHTS.forEach((h) => {
+      const el = document.createElement("div");
+      el.className = "hl-card";
+      el.innerHTML = `
+        <div class="verse">${h.text}</div>
+        <div class="from">${LANG === "en" ? h.fromEn : h.from}</div>
+        <div class="why">${LANG === "en" ? h.whyEn : h.why}</div>
+        <div class="star">${"★".repeat(h.star)}</div>`;
+      hlList.appendChild(el);
+    });
+  }
 
-  /* 研学互动：填句 */
+  /* ---------- 研学互动：填句 ---------- */
   const quizQ = $("#quiz-q");
   const quizOpts = $("#quiz-opts");
   const quizFb = $("#quiz-fb");
   const quizScore = $("#quiz-score");
   const quizNext = $("#quiz-next");
-
-  // 构造题库：把每句以“，”切分
   const pool = [];
   POEMS.filter((p) => !p.sensitive).forEach((p) => {
     p.lines.forEach((ln) => {
@@ -188,9 +281,7 @@
       }
     });
   });
-
   let cur = null, answered = false, score = 0, total = 0;
-
   function shuffle(a) {
     a = a.slice();
     for (let i = a.length - 1; i > 0; i--) {
@@ -199,16 +290,14 @@
     }
     return a;
   }
-
   function nextQuiz() {
-    if (!pool.length) { quizQ.textContent = "题库已用完，感谢研习！"; quizOpts.innerHTML = ""; quizNext.style.display = "none"; return; }
+    if (!pool.length) { quizQ.textContent = T("quiz_done"); quizOpts.innerHTML = ""; quizNext.style.display = "none"; return; }
     answered = false;
     quizFb.textContent = "";
     quizFb.className = "quiz-fb";
     const q = pool[Math.floor(Math.random() * pool.length)];
     cur = q;
     quizQ.innerHTML = `《${q.title}》　“${q.a}，<span class="blank">＿＿＿</span>”`;
-
     const distract = shuffle(pool.filter((x) => x.b !== q.b).map((x) => x.b)).slice(0, 3);
     const opts = shuffle([q.b, ...distract]);
     quizOpts.innerHTML = "";
@@ -220,7 +309,6 @@
       quizOpts.appendChild(b);
     });
   }
-
   function choose(el, val, ans) {
     if (answered) return;
     answered = true;
@@ -229,27 +317,59 @@
     if (val === ans) {
       el.classList.add("right");
       score++;
-      quizFb.textContent = "✓ 正是此句，诗心相通。";
+      quizFb.textContent = T("fb_ok");
       quizFb.className = "quiz-fb ok";
     } else {
       el.classList.add("wrong");
       $$(".quiz-opt", quizOpts).forEach((x) => { if (x.textContent === ans) x.classList.add("right"); });
-      quizFb.textContent = "✗ 正确答案：" + ans;
+      quizFb.textContent = T("fb_no") + ans;
       quizFb.className = "quiz-fb no";
     }
     quizScore.textContent = `已答 ${total} 题　答对 ${score} 题　正确率 ${Math.round((score / total) * 100)}%`;
   }
-
   quizNext.onclick = nextQuiz;
 
-  /* 滚动揭示 */
+  /* ---------- 静态文案 i18n ---------- */
+  function setStaticI18n() {
+    $$("[data-i18n]").forEach((el) => {
+      const k = el.getAttribute("data-i18n");
+      el.textContent = T(k);
+    });
+    // 搜索框占位
+    const sb = $("#search");
+    if (sb) sb.placeholder = T("search_ph");
+    // 语言按钮状态
+    $$(".lang-btn").forEach((b) => {
+      b.classList.toggle("active", b.getAttribute("data-lang") === LANG);
+    });
+  }
+
+  /* ---------- 全站语言切换 ---------- */
+  function setLang(lang) {
+    LANG = lang;
+    setStaticI18n();
+    renderCulture();
+    buildFilters();
+    renderPoems();
+    renderThemes();
+    renderHighlights();
+    if (curPoem) renderDetail();
+    try { localStorage.setItem("beifeng_lang", LANG); } catch (e) {}
+  }
+  $$(".lang-btn").forEach((b) => {
+    b.onclick = () => setLang(b.getAttribute("data-lang"));
+  });
+
+  /* ---------- 滚动揭示 ---------- */
   const io = new IntersectionObserver(
     (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
     { threshold: 0.12 }
   );
   $$(".reveal").forEach((el) => io.observe(el));
 
-  /* 初始化 */
-  renderPoems();
+  /* ---------- 初始化 ---------- */
+  let saved = "zh";
+  try { saved = localStorage.getItem("beifeng_lang") || "zh"; } catch (e) {}
+  setLang(saved);
   nextQuiz();
 })();
