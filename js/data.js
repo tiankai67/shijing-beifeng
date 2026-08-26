@@ -117,7 +117,164 @@ const POEMS = [
           "m": "To roll up."
         }
       ],
-      "scene": "Promotional boards on main thoroughfares, spirit-and-culture display zones, and city-image publicity."
+      "scene": "Promotional boards on main thoroughfares, spirit-and-culture display zones, and city-image publicity.",
+      "fullTr": [
+        [
+          {
+            "zh": "泛彼柏舟，",
+            "tw": "荡起那柏木小船，",
+            "en": "A cypress boat drifts,"
+          },
+          {
+            "zh": "亦泛其流。",
+            "tw": "它也随波漂流。",
+            "en": "floating upon the stream."
+          },
+          {
+            "zh": "耿耿不寐，",
+            "tw": "长夜耿耿难成眠，",
+            "en": "Sleepless and wakeful,"
+          },
+          {
+            "zh": "如有隐忧。",
+            "tw": "似有隐忧在心头。",
+            "en": "as if with hidden care."
+          },
+          {
+            "zh": "微我无酒，",
+            "tw": "并非我无美酒，",
+            "en": "It is not that I lack wine,"
+          },
+          {
+            "zh": "以敖以游。",
+            "tw": "聊以遨游消愁。",
+            "en": "to wander and roam at ease."
+          }
+        ],
+        [
+          {
+            "zh": "我心匪鉴，",
+            "tw": "我的心并非明镜，",
+            "en": "My heart is not a mirror,"
+          },
+          {
+            "zh": "不可以茹。",
+            "tw": "不能什么都容纳。",
+            "en": "that takes in all it sees."
+          },
+          {
+            "zh": "亦有兄弟，",
+            "tw": "虽也有兄弟在，",
+            "en": "Though I have brothers,"
+          },
+          {
+            "zh": "不可以据。",
+            "tw": "却不能够依靠。",
+            "en": "I cannot lean on them."
+          },
+          {
+            "zh": "薄言往愬，",
+            "tw": "曾前去诉说苦衷，",
+            "en": "I went to plead my case,"
+          },
+          {
+            "zh": "逢彼之怒。",
+            "tw": "却惹得他恼怒。",
+            "en": "and met only his wrath."
+          }
+        ],
+        [
+          {
+            "zh": "我心匪石，",
+            "tw": "我的心不是石头，",
+            "en": "My heart is no stone,"
+          },
+          {
+            "zh": "不可转也。",
+            "tw": "不可随意转动。",
+            "en": "that it should be rolled away."
+          },
+          {
+            "zh": "我心匪席，",
+            "tw": "我的心不是草席，",
+            "en": "My heart is no mat,"
+          },
+          {
+            "zh": "不可卷也。",
+            "tw": "不可任意卷起。",
+            "en": "that it should be rolled up."
+          },
+          {
+            "zh": "威仪棣棣，",
+            "tw": "仪容闲雅端庄，",
+            "en": "My bearing is composed,"
+          },
+          {
+            "zh": "不可选也。",
+            "tw": "不可随便挑选。",
+            "en": "beyond all compare."
+          }
+        ],
+        [
+          {
+            "zh": "忧心悄悄，",
+            "tw": "忧心悄悄深藏，",
+            "en": "My heart is quietly grieved;"
+          },
+          {
+            "zh": "愠于群小。",
+            "tw": "得罪了众小人。",
+            "en": "I am resented by the petty."
+          },
+          {
+            "zh": "觏闵既多，",
+            "tw": "遭逢苦难已多，",
+            "en": "Much affliction have I met,"
+          },
+          {
+            "zh": "受侮不少。",
+            "tw": "受辱也不算少。",
+            "en": "and no little insult borne."
+          },
+          {
+            "zh": "静言思之，",
+            "tw": "静下心来细想，",
+            "en": "In stillness I ponder it,"
+          },
+          {
+            "zh": "寤辟有摽。",
+            "tw": "醒时捶胸心焦。",
+            "en": "and wake to beat my breast."
+          }
+        ],
+        [
+          {
+            "zh": "日居月诸，",
+            "tw": "太阳啊月亮啊，",
+            "en": "O sun, O moon,"
+          },
+          {
+            "zh": "胡迭而微？心之忧矣，",
+            "tw": "为何轮替无光？我心忧伤，",
+            "en": "why do you dim in turn? My heart is sorrowful;"
+          },
+          {
+            "zh": "如匪浣衣。",
+            "tw": "如脏衣未曾洗。",
+            "en": "like unwashed linen."
+          },
+          {
+            "zh": "静言思之，",
+            "tw": "静心思量，",
+            "en": "In stillness I ponder,"
+          },
+          {
+            "zh": "不能奋飞。",
+            "tw": "却无力奋飞远走。",
+            "en": "yet cannot take my flight."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -204,6 +361,163 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "泛彼柏舟，",
+          "tw": "荡起那柏木小船，",
+          "en": "A cypress boat drifts,"
+        },
+        {
+          "zh": "亦泛其流。",
+          "tw": "它也随波漂流。",
+          "en": "floating upon the stream."
+        },
+        {
+          "zh": "耿耿不寐，",
+          "tw": "长夜耿耿难成眠，",
+          "en": "Sleepless and wakeful,"
+        },
+        {
+          "zh": "如有隐忧。",
+          "tw": "似有隐忧在心头。",
+          "en": "as if with hidden care."
+        },
+        {
+          "zh": "微我无酒，",
+          "tw": "并非我无美酒，",
+          "en": "It is not that I lack wine,"
+        },
+        {
+          "zh": "以敖以游。",
+          "tw": "聊以遨游消愁。",
+          "en": "to wander and roam at ease."
+        }
+      ],
+      [
+        {
+          "zh": "我心匪鉴，",
+          "tw": "我的心并非明镜，",
+          "en": "My heart is not a mirror,"
+        },
+        {
+          "zh": "不可以茹。",
+          "tw": "不能什么都容纳。",
+          "en": "that takes in all it sees."
+        },
+        {
+          "zh": "亦有兄弟，",
+          "tw": "虽也有兄弟在，",
+          "en": "Though I have brothers,"
+        },
+        {
+          "zh": "不可以据。",
+          "tw": "却不能够依靠。",
+          "en": "I cannot lean on them."
+        },
+        {
+          "zh": "薄言往愬，",
+          "tw": "曾前去诉说苦衷，",
+          "en": "I went to plead my case,"
+        },
+        {
+          "zh": "逢彼之怒。",
+          "tw": "却惹得他恼怒。",
+          "en": "and met only his wrath."
+        }
+      ],
+      [
+        {
+          "zh": "我心匪石，",
+          "tw": "我的心不是石头，",
+          "en": "My heart is no stone,"
+        },
+        {
+          "zh": "不可转也。",
+          "tw": "不可随意转动。",
+          "en": "that it should be rolled away."
+        },
+        {
+          "zh": "我心匪席，",
+          "tw": "我的心不是草席，",
+          "en": "My heart is no mat,"
+        },
+        {
+          "zh": "不可卷也。",
+          "tw": "不可任意卷起。",
+          "en": "that it should be rolled up."
+        },
+        {
+          "zh": "威仪棣棣，",
+          "tw": "仪容闲雅端庄，",
+          "en": "My bearing is composed,"
+        },
+        {
+          "zh": "不可选也。",
+          "tw": "不可随便挑选。",
+          "en": "beyond all compare."
+        }
+      ],
+      [
+        {
+          "zh": "忧心悄悄，",
+          "tw": "忧心悄悄深藏，",
+          "en": "My heart is quietly grieved;"
+        },
+        {
+          "zh": "愠于群小。",
+          "tw": "得罪了众小人。",
+          "en": "I am resented by the petty."
+        },
+        {
+          "zh": "觏闵既多，",
+          "tw": "遭逢苦难已多，",
+          "en": "Much affliction have I met,"
+        },
+        {
+          "zh": "受侮不少。",
+          "tw": "受辱也不算少。",
+          "en": "and no little insult borne."
+        },
+        {
+          "zh": "静言思之，",
+          "tw": "静下心来细想，",
+          "en": "In stillness I ponder it,"
+        },
+        {
+          "zh": "寤辟有摽。",
+          "tw": "醒时捶胸心焦。",
+          "en": "and wake to beat my breast."
+        }
+      ],
+      [
+        {
+          "zh": "日居月诸，",
+          "tw": "太阳啊月亮啊，",
+          "en": "O sun, O moon,"
+        },
+        {
+          "zh": "胡迭而微？心之忧矣，",
+          "tw": "为何轮替无光？我心忧伤，",
+          "en": "why do you dim in turn? My heart is sorrowful;"
+        },
+        {
+          "zh": "如匪浣衣。",
+          "tw": "如脏衣未曾洗。",
+          "en": "like unwashed linen."
+        },
+        {
+          "zh": "静言思之，",
+          "tw": "静心思量，",
+          "en": "In stillness I ponder,"
+        },
+        {
+          "zh": "不能奋飞。",
+          "tw": "却无力奋飞远走。",
+          "en": "yet cannot take my flight."
+        }
+      ]
     ]
   },
   {
@@ -273,7 +587,97 @@ const POEMS = [
           "m": "Fault; blame."
         }
       ],
-      "scene": "Family activities, family-themed landscapes, rural culture walls, and study-tour education bases."
+      "scene": "Family activities, family-themed landscapes, rural culture walls, and study-tour education bases.",
+      "fullTr": [
+        [
+          {
+            "zh": "绿兮衣兮，",
+            "tw": "绿衣裳啊绿衣裳，",
+            "en": "O robe of green,"
+          },
+          {
+            "zh": "绿衣黄里。",
+            "tw": "绿衣衬着黄里子。",
+            "en": "green without, yellow within."
+          },
+          {
+            "zh": "心之忧矣，",
+            "tw": "心中的忧思啊，",
+            "en": "My heart is full of care;"
+          },
+          {
+            "zh": "曷维其已？",
+            "tw": "何时才能止息？",
+            "en": "when will it ever end?"
+          }
+        ],
+        [
+          {
+            "zh": "绿兮衣兮，",
+            "tw": "绿衣裳啊绿衣裳，",
+            "en": "O robe of green,"
+          },
+          {
+            "zh": "绿衣黄裳。",
+            "tw": "绿衣配着黄下裳。",
+            "en": "green coat, yellow skirt."
+          },
+          {
+            "zh": "心之忧矣，",
+            "tw": "心中的忧思啊，",
+            "en": "My heart is full of care;"
+          },
+          {
+            "zh": "曷维其亡？",
+            "tw": "何时才能忘怀？",
+            "en": "when will it pass away?"
+          }
+        ],
+        [
+          {
+            "zh": "绿兮丝兮，",
+            "tw": "绿丝线啊绿丝线，",
+            "en": "O threads of green,"
+          },
+          {
+            "zh": "女所治兮。",
+            "tw": "是你亲手所织。",
+            "en": "it was you who spun them."
+          },
+          {
+            "zh": "我思古人，",
+            "tw": "我思念亡故的你，",
+            "en": "I think of the dead one,"
+          },
+          {
+            "zh": "俾无訧兮。",
+            "tw": "使我不犯过错。",
+            "en": "who kept me from blame."
+          }
+        ],
+        [
+          {
+            "zh": "絺兮绤兮，",
+            "tw": "细葛啊粗葛啊，",
+            "en": "Fine and coarse cloth,"
+          },
+          {
+            "zh": "凄其以风。",
+            "tw": "风吹来阵阵凉。",
+            "en": "chilly in the wind."
+          },
+          {
+            "zh": "我思古人，",
+            "tw": "我思念亡故的你，",
+            "en": "I think of the dead one,"
+          },
+          {
+            "zh": "实获我心。",
+            "tw": "实得我心所想。",
+            "en": "who truly knew my heart."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -336,6 +740,96 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "绿兮衣兮，",
+          "tw": "绿衣裳啊绿衣裳，",
+          "en": "O robe of green,"
+        },
+        {
+          "zh": "绿衣黄里。",
+          "tw": "绿衣衬着黄里子。",
+          "en": "green without, yellow within."
+        },
+        {
+          "zh": "心之忧矣，",
+          "tw": "心中的忧思啊，",
+          "en": "My heart is full of care;"
+        },
+        {
+          "zh": "曷维其已？",
+          "tw": "何时才能止息？",
+          "en": "when will it ever end?"
+        }
+      ],
+      [
+        {
+          "zh": "绿兮衣兮，",
+          "tw": "绿衣裳啊绿衣裳，",
+          "en": "O robe of green,"
+        },
+        {
+          "zh": "绿衣黄裳。",
+          "tw": "绿衣配着黄下裳。",
+          "en": "green coat, yellow skirt."
+        },
+        {
+          "zh": "心之忧矣，",
+          "tw": "心中的忧思啊，",
+          "en": "My heart is full of care;"
+        },
+        {
+          "zh": "曷维其亡？",
+          "tw": "何时才能忘怀？",
+          "en": "when will it pass away?"
+        }
+      ],
+      [
+        {
+          "zh": "绿兮丝兮，",
+          "tw": "绿丝线啊绿丝线，",
+          "en": "O threads of green,"
+        },
+        {
+          "zh": "女所治兮。",
+          "tw": "是你亲手所织。",
+          "en": "it was you who spun them."
+        },
+        {
+          "zh": "我思古人，",
+          "tw": "我思念亡故的你，",
+          "en": "I think of the dead one,"
+        },
+        {
+          "zh": "俾无訧兮。",
+          "tw": "使我不犯过错。",
+          "en": "who kept me from blame."
+        }
+      ],
+      [
+        {
+          "zh": "絺兮绤兮，",
+          "tw": "细葛啊粗葛啊，",
+          "en": "Fine and coarse cloth,"
+        },
+        {
+          "zh": "凄其以风。",
+          "tw": "风吹来阵阵凉。",
+          "en": "chilly in the wind."
+        },
+        {
+          "zh": "我思古人，",
+          "tw": "我思念亡故的你，",
+          "en": "I think of the dead one,"
+        },
+        {
+          "zh": "实获我心。",
+          "tw": "实得我心所想。",
+          "en": "who truly knew my heart."
+        }
+      ]
     ]
   },
   {
@@ -405,7 +899,137 @@ const POEMS = [
           "m": "Good and prudent."
         }
       ],
-      "scene": "Wetland-park vignettes, floral landscaping, and ecological-scene displays."
+      "scene": "Wetland-park vignettes, floral landscaping, and ecological-scene displays.",
+      "fullTr": [
+        [
+          {
+            "zh": "燕燕于飞，",
+            "tw": "燕子双双飞，",
+            "en": "Swallow, swallow, flying;"
+          },
+          {
+            "zh": "差池其羽。",
+            "tw": "舒展着羽翼。",
+            "en": "with unequal wings."
+          },
+          {
+            "zh": "之子于归，",
+            "tw": "这位姑娘出嫁，",
+            "en": "That lady goes to her home,"
+          },
+          {
+            "zh": "远送于野。",
+            "tw": "远送她到郊野。",
+            "en": "I see her off far in the wild."
+          },
+          {
+            "zh": "瞻望弗及，",
+            "tw": "伫望不见身影，",
+            "en": "I look till she is lost,"
+          },
+          {
+            "zh": "泣涕如雨。",
+            "tw": "泪落如雨滂沱。",
+            "en": "my tears fall like rain."
+          }
+        ],
+        [
+          {
+            "zh": "燕燕于飞，",
+            "tw": "燕子双双飞，",
+            "en": "Swallow, swallow, flying;"
+          },
+          {
+            "zh": "颉之颃之。",
+            "tw": "上下翻飞起舞。",
+            "en": "now up, now down."
+          },
+          {
+            "zh": "之子于归，",
+            "tw": "这位姑娘出嫁，",
+            "en": "That lady goes to her home,"
+          },
+          {
+            "zh": "远于将之。",
+            "tw": "远送她上归途。",
+            "en": "I escort her far away."
+          },
+          {
+            "zh": "瞻望弗及，",
+            "tw": "伫望不见身影，",
+            "en": "I look till she is lost,"
+          },
+          {
+            "zh": "伫立以泣。",
+            "tw": "伫立暗自泣涕。",
+            "en": "and stand weeping alone."
+          }
+        ],
+        [
+          {
+            "zh": "燕燕于飞，",
+            "tw": "燕子双双飞，",
+            "en": "Swallow, swallow, flying;"
+          },
+          {
+            "zh": "下上其音。",
+            "tw": "鸣声忽高忽低。",
+            "en": "its voice rising and falling."
+          },
+          {
+            "zh": "之子于归，",
+            "tw": "这位姑娘出嫁，",
+            "en": "That lady goes to her home,"
+          },
+          {
+            "zh": "远送于南。",
+            "tw": "远送她去南方。",
+            "en": "I see her off to the south."
+          },
+          {
+            "zh": "瞻望弗及，",
+            "tw": "伫望不见身影，",
+            "en": "I look till she is lost,"
+          },
+          {
+            "zh": "实劳我心。",
+            "tw": "实令我心劳苦。",
+            "en": "and my heart is sore."
+          }
+        ],
+        [
+          {
+            "zh": "仲氏任只，",
+            "tw": "二妹堪当重任，",
+            "en": "O my second sister, so steadfast,"
+          },
+          {
+            "zh": "其心塞渊。",
+            "tw": "其心诚实深沉。",
+            "en": "your heart is true and deep."
+          },
+          {
+            "zh": "终温且惠，",
+            "tw": "既温和又恭顺，",
+            "en": "Gentle and gracious ever,"
+          },
+          {
+            "zh": "淑慎其身。",
+            "tw": "善良谨慎持身。",
+            "en": "virtuous in all you do."
+          },
+          {
+            "zh": "先君之思，",
+            "tw": "常念先君遗训，",
+            "en": "Mindful of our late lord,"
+          },
+          {
+            "zh": "以勖寡人。",
+            "tw": "以此勉励寡人。",
+            "en": "you urge me on still."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -474,6 +1098,136 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "燕燕于飞，",
+          "tw": "燕子双双飞，",
+          "en": "Swallow, swallow, flying;"
+        },
+        {
+          "zh": "差池其羽。",
+          "tw": "舒展着羽翼。",
+          "en": "with unequal wings."
+        },
+        {
+          "zh": "之子于归，",
+          "tw": "这位姑娘出嫁，",
+          "en": "That lady goes to her home,"
+        },
+        {
+          "zh": "远送于野。",
+          "tw": "远送她到郊野。",
+          "en": "I see her off far in the wild."
+        },
+        {
+          "zh": "瞻望弗及，",
+          "tw": "伫望不见身影，",
+          "en": "I look till she is lost,"
+        },
+        {
+          "zh": "泣涕如雨。",
+          "tw": "泪落如雨滂沱。",
+          "en": "my tears fall like rain."
+        }
+      ],
+      [
+        {
+          "zh": "燕燕于飞，",
+          "tw": "燕子双双飞，",
+          "en": "Swallow, swallow, flying;"
+        },
+        {
+          "zh": "颉之颃之。",
+          "tw": "上下翻飞起舞。",
+          "en": "now up, now down."
+        },
+        {
+          "zh": "之子于归，",
+          "tw": "这位姑娘出嫁，",
+          "en": "That lady goes to her home,"
+        },
+        {
+          "zh": "远于将之。",
+          "tw": "远送她上归途。",
+          "en": "I escort her far away."
+        },
+        {
+          "zh": "瞻望弗及，",
+          "tw": "伫望不见身影，",
+          "en": "I look till she is lost,"
+        },
+        {
+          "zh": "伫立以泣。",
+          "tw": "伫立暗自泣涕。",
+          "en": "and stand weeping alone."
+        }
+      ],
+      [
+        {
+          "zh": "燕燕于飞，",
+          "tw": "燕子双双飞，",
+          "en": "Swallow, swallow, flying;"
+        },
+        {
+          "zh": "下上其音。",
+          "tw": "鸣声忽高忽低。",
+          "en": "its voice rising and falling."
+        },
+        {
+          "zh": "之子于归，",
+          "tw": "这位姑娘出嫁，",
+          "en": "That lady goes to her home,"
+        },
+        {
+          "zh": "远送于南。",
+          "tw": "远送她去南方。",
+          "en": "I see her off to the south."
+        },
+        {
+          "zh": "瞻望弗及，",
+          "tw": "伫望不见身影，",
+          "en": "I look till she is lost,"
+        },
+        {
+          "zh": "实劳我心。",
+          "tw": "实令我心劳苦。",
+          "en": "and my heart is sore."
+        }
+      ],
+      [
+        {
+          "zh": "仲氏任只，",
+          "tw": "二妹堪当重任，",
+          "en": "O my second sister, so steadfast,"
+        },
+        {
+          "zh": "其心塞渊。",
+          "tw": "其心诚实深沉。",
+          "en": "your heart is true and deep."
+        },
+        {
+          "zh": "终温且惠，",
+          "tw": "既温和又恭顺，",
+          "en": "Gentle and gracious ever,"
+        },
+        {
+          "zh": "淑慎其身。",
+          "tw": "善良谨慎持身。",
+          "en": "virtuous in all you do."
+        },
+        {
+          "zh": "先君之思，",
+          "tw": "常念先君遗训，",
+          "en": "Mindful of our late lord,"
+        },
+        {
+          "zh": "以勖寡人。",
+          "tw": "以此勉励寡人。",
+          "en": "you urge me on still."
+        }
+      ]
     ]
   },
   {
@@ -533,7 +1287,117 @@ const POEMS = [
           "m": "To shine upon; to look down."
         }
       ],
-      "scene": "Culture exhibition halls, homecoming-themed publicity, and ecological-scene displays."
+      "scene": "Culture exhibition halls, homecoming-themed publicity, and ecological-scene displays.",
+      "fullTr": [
+        [
+          {
+            "zh": "日居月诸，",
+            "tw": "太阳啊月亮啊，",
+            "en": "O sun, O moon,"
+          },
+          {
+            "zh": "照临下土。",
+            "tw": "光照这下界大地。",
+            "en": "that shine upon the earth,"
+          },
+          {
+            "zh": "乃如之人兮，",
+            "tw": "竟有那样的人啊，",
+            "en": "there is one such as he,"
+          },
+          {
+            "zh": "逝不古处。",
+            "tw": "不念旧情相处。",
+            "en": "who will not treat me as of old."
+          },
+          {
+            "zh": "胡能有定？宁不我顾？",
+            "tw": "何时才能安定？竟不顾念我？",
+            "en": "How can there be peace? He regards me not."
+          }
+        ],
+        [
+          {
+            "zh": "日居月诸，",
+            "tw": "太阳啊月亮啊，",
+            "en": "O sun, O moon,"
+          },
+          {
+            "zh": "下土是冒。",
+            "tw": "覆照这下界大地。",
+            "en": "that overspread the earth,"
+          },
+          {
+            "zh": "乃如之人兮，",
+            "tw": "竟有那样的人啊，",
+            "en": "there is one such as he,"
+          },
+          {
+            "zh": "逝不相好。",
+            "tw": "不再与我相好。",
+            "en": "who no longer loves me."
+          },
+          {
+            "zh": "胡能有定？宁不我报？",
+            "tw": "何时才能安定？竟不回报我？",
+            "en": "How can there be peace? He repays me not."
+          }
+        ],
+        [
+          {
+            "zh": "日居月诸，",
+            "tw": "太阳啊月亮啊，",
+            "en": "O sun, O moon,"
+          },
+          {
+            "zh": "出自东方。",
+            "tw": "升起自东方。",
+            "en": "that rise in the east,"
+          },
+          {
+            "zh": "乃如之人兮，",
+            "tw": "竟有那样的人啊，",
+            "en": "there is one such as he,"
+          },
+          {
+            "zh": "德音无良。",
+            "tw": "德行声名不良。",
+            "en": "whose fame is nothing good."
+          },
+          {
+            "zh": "胡能有定？俾也可忘。",
+            "tw": "何时才能安定？教人也能淡忘。",
+            "en": "How can there be peace? Would I could forget."
+          }
+        ],
+        [
+          {
+            "zh": "日居月诸，",
+            "tw": "太阳啊月亮啊，",
+            "en": "O sun, O moon,"
+          },
+          {
+            "zh": "东方自出。",
+            "tw": "自东方升起。",
+            "en": "that come from the east,"
+          },
+          {
+            "zh": "父兮母兮，",
+            "tw": "父亲啊母亲啊，",
+            "en": "O father, O mother,"
+          },
+          {
+            "zh": "畜我不卒。",
+            "tw": "养我却不终老。",
+            "en": "you reared me but not to the end."
+          },
+          {
+            "zh": "胡能有定？报我不述。",
+            "tw": "何时才能安定？待我全无道理。",
+            "en": "How can there be peace? His care is unjust."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -590,6 +1454,116 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "日居月诸，",
+          "tw": "太阳啊月亮啊，",
+          "en": "O sun, O moon,"
+        },
+        {
+          "zh": "照临下土。",
+          "tw": "光照这下界大地。",
+          "en": "that shine upon the earth,"
+        },
+        {
+          "zh": "乃如之人兮，",
+          "tw": "竟有那样的人啊，",
+          "en": "there is one such as he,"
+        },
+        {
+          "zh": "逝不古处。",
+          "tw": "不念旧情相处。",
+          "en": "who will not treat me as of old."
+        },
+        {
+          "zh": "胡能有定？宁不我顾？",
+          "tw": "何时才能安定？竟不顾念我？",
+          "en": "How can there be peace? He regards me not."
+        }
+      ],
+      [
+        {
+          "zh": "日居月诸，",
+          "tw": "太阳啊月亮啊，",
+          "en": "O sun, O moon,"
+        },
+        {
+          "zh": "下土是冒。",
+          "tw": "覆照这下界大地。",
+          "en": "that overspread the earth,"
+        },
+        {
+          "zh": "乃如之人兮，",
+          "tw": "竟有那样的人啊，",
+          "en": "there is one such as he,"
+        },
+        {
+          "zh": "逝不相好。",
+          "tw": "不再与我相好。",
+          "en": "who no longer loves me."
+        },
+        {
+          "zh": "胡能有定？宁不我报？",
+          "tw": "何时才能安定？竟不回报我？",
+          "en": "How can there be peace? He repays me not."
+        }
+      ],
+      [
+        {
+          "zh": "日居月诸，",
+          "tw": "太阳啊月亮啊，",
+          "en": "O sun, O moon,"
+        },
+        {
+          "zh": "出自东方。",
+          "tw": "升起自东方。",
+          "en": "that rise in the east,"
+        },
+        {
+          "zh": "乃如之人兮，",
+          "tw": "竟有那样的人啊，",
+          "en": "there is one such as he,"
+        },
+        {
+          "zh": "德音无良。",
+          "tw": "德行声名不良。",
+          "en": "whose fame is nothing good."
+        },
+        {
+          "zh": "胡能有定？俾也可忘。",
+          "tw": "何时才能安定？教人也能淡忘。",
+          "en": "How can there be peace? Would I could forget."
+        }
+      ],
+      [
+        {
+          "zh": "日居月诸，",
+          "tw": "太阳啊月亮啊，",
+          "en": "O sun, O moon,"
+        },
+        {
+          "zh": "东方自出。",
+          "tw": "自东方升起。",
+          "en": "that come from the east,"
+        },
+        {
+          "zh": "父兮母兮，",
+          "tw": "父亲啊母亲啊，",
+          "en": "O father, O mother,"
+        },
+        {
+          "zh": "畜我不卒。",
+          "tw": "养我却不终老。",
+          "en": "you reared me but not to the end."
+        },
+        {
+          "zh": "胡能有定？报我不述。",
+          "tw": "何时才能安定？待我全无道理。",
+          "en": "How can there be peace? His care is unjust."
+        }
+      ]
     ]
   },
   {
@@ -659,7 +1633,97 @@ const POEMS = [
           "m": "To sneeze."
         }
       ],
-      "scene": "Romance-themed photo spots and scenic-area promotional boards."
+      "scene": "Romance-themed photo spots and scenic-area promotional boards.",
+      "fullTr": [
+        [
+          {
+            "zh": "终风且暴，",
+            "tw": "风终日是暴风，",
+            "en": "At last the wind is wild,"
+          },
+          {
+            "zh": "顾我则笑。",
+            "tw": "他见我则含笑。",
+            "en": "he smiles when he sees me."
+          },
+          {
+            "zh": "谑浪笑敖，",
+            "tw": "戏谑放浪调笑，",
+            "en": "He teases, laughs, and mocks,"
+          },
+          {
+            "zh": "中心是悼。",
+            "tw": "使我心中哀伤。",
+            "en": "and in my heart I mourn."
+          }
+        ],
+        [
+          {
+            "zh": "终风且霾，",
+            "tw": "风终日且阴霾，",
+            "en": "At last the wind brings haze,"
+          },
+          {
+            "zh": "惠然肯来。",
+            "tw": "他惠然肯来临。",
+            "en": "yet kindly he came to me."
+          },
+          {
+            "zh": "莫往莫来，",
+            "tw": "如今不来往了，",
+            "en": "But he goes and comes no more,"
+          },
+          {
+            "zh": "悠悠我思。",
+            "tw": "悠悠是我相思。",
+            "en": "and my thoughts drift long."
+          }
+        ],
+        [
+          {
+            "zh": "终风且曀，",
+            "tw": "风终日且阴沉，",
+            "en": "At last the wind is gloomy,"
+          },
+          {
+            "zh": "不日有曀。",
+            "tw": "不多时又昏暗。",
+            "en": "soon again it darkens."
+          },
+          {
+            "zh": "寤言不寐，",
+            "tw": "醒着无法入眠，",
+            "en": "Awake, I cannot sleep,"
+          },
+          {
+            "zh": "愿言则嚏。",
+            "tw": "念及便打喷嚏。",
+            "en": "and thinking of him, I sneeze."
+          }
+        ],
+        [
+          {
+            "zh": "曀曀其阴，",
+            "tw": "天色阴沉昏暗，",
+            "en": "Gloomy, gloomy the sky,"
+          },
+          {
+            "zh": "虺虺其雷。",
+            "tw": "轰隆隆响着雷。",
+            "en": "rumbling, rumbling the thunder."
+          },
+          {
+            "zh": "寤言不寐，",
+            "tw": "醒着无法入眠，",
+            "en": "Awake, I cannot sleep,"
+          },
+          {
+            "zh": "愿言则怀。",
+            "tw": "念及满心怀念。",
+            "en": "and thinking of him, I long."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -734,6 +1798,96 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "终风且暴，",
+          "tw": "风终日是暴风，",
+          "en": "At last the wind is wild,"
+        },
+        {
+          "zh": "顾我则笑。",
+          "tw": "他见我则含笑。",
+          "en": "he smiles when he sees me."
+        },
+        {
+          "zh": "谑浪笑敖，",
+          "tw": "戏谑放浪调笑，",
+          "en": "He teases, laughs, and mocks,"
+        },
+        {
+          "zh": "中心是悼。",
+          "tw": "使我心中哀伤。",
+          "en": "and in my heart I mourn."
+        }
+      ],
+      [
+        {
+          "zh": "终风且霾，",
+          "tw": "风终日且阴霾，",
+          "en": "At last the wind brings haze,"
+        },
+        {
+          "zh": "惠然肯来。",
+          "tw": "他惠然肯来临。",
+          "en": "yet kindly he came to me."
+        },
+        {
+          "zh": "莫往莫来，",
+          "tw": "如今不来往了，",
+          "en": "But he goes and comes no more,"
+        },
+        {
+          "zh": "悠悠我思。",
+          "tw": "悠悠是我相思。",
+          "en": "and my thoughts drift long."
+        }
+      ],
+      [
+        {
+          "zh": "终风且曀，",
+          "tw": "风终日且阴沉，",
+          "en": "At last the wind is gloomy,"
+        },
+        {
+          "zh": "不日有曀。",
+          "tw": "不多时又昏暗。",
+          "en": "soon again it darkens."
+        },
+        {
+          "zh": "寤言不寐，",
+          "tw": "醒着无法入眠，",
+          "en": "Awake, I cannot sleep,"
+        },
+        {
+          "zh": "愿言则嚏。",
+          "tw": "念及便打喷嚏。",
+          "en": "and thinking of him, I sneeze."
+        }
+      ],
+      [
+        {
+          "zh": "曀曀其阴，",
+          "tw": "天色阴沉昏暗，",
+          "en": "Gloomy, gloomy the sky,"
+        },
+        {
+          "zh": "虺虺其雷。",
+          "tw": "轰隆隆响着雷。",
+          "en": "rumbling, rumbling the thunder."
+        },
+        {
+          "zh": "寤言不寐，",
+          "tw": "醒着无法入眠，",
+          "en": "Awake, I cannot sleep,"
+        },
+        {
+          "zh": "愿言则怀。",
+          "tw": "念及满心怀念。",
+          "en": "and thinking of him, I long."
+        }
+      ]
     ]
   },
   {
@@ -817,7 +1971,104 @@ const POEMS = [
           "m": "Together."
         }
       ],
-      "scene": "Qixi festivals, youth socials, romance photo spots, and courtship-culture scenes (recommended ★★★★★)."
+      "scene": "Qixi festivals, youth socials, romance photo spots, and courtship-culture scenes (recommended ★★★★★).",
+      "fullTr": [
+        [
+          {
+            "zh": "击鼓其镗，",
+            "tw": "击起战鼓镗镗，",
+            "en": "The drums are beaten loud,"
+          },
+          {
+            "zh": "踊跃用兵。",
+            "tw": "踊跃操练用兵。",
+            "en": "they leap to train for war."
+          },
+          {
+            "zh": "土国城漕，",
+            "tw": "国内筑城漕邑，",
+            "en": "At home they build the walls,"
+          },
+          {
+            "zh": "我独南行。",
+            "tw": "独我南行从征。",
+            "en": "but I must march to the south."
+          }
+        ],
+        [
+          {
+            "zh": "从孙子仲，",
+            "tw": "跟随孙仲元帅，",
+            "en": "I follow Sun Zhong,"
+          },
+          {
+            "zh": "平陈与宋。",
+            "tw": "调停陈国宋国。",
+            "en": "to pacify Chen and Song."
+          },
+          {
+            "zh": "不我以归，",
+            "tw": "不许我回归乡，",
+            "en": "They will not let me home,"
+          },
+          {
+            "zh": "忧心有忡。",
+            "tw": "忧心忡忡难当。",
+            "en": "my worried heart is sore."
+          }
+        ],
+        [
+          {
+            "zh": "爰居爰处？爰丧其马？于以求之？于林之下。",
+            "tw": "何处安身？何处歇马？马儿走失，去哪寻它？原来在树林之下。",
+            "en": "Where to dwell, where to rest? Where is my lost horse? I seek it — beneath the trees."
+          }
+        ],
+        [
+          {
+            "zh": "死生契阔，",
+            "tw": "生死离合聚散，",
+            "en": "In life and death we parted,"
+          },
+          {
+            "zh": "与子成说。",
+            "tw": "与你立下誓约。",
+            "en": "I made my vow with you."
+          },
+          {
+            "zh": "执子之手，",
+            "tw": "紧握你的手，",
+            "en": "I held your hand,"
+          },
+          {
+            "zh": "与子偕老。",
+            "tw": "与你白头到老。",
+            "en": "and said we'd grow old together."
+          }
+        ],
+        [
+          {
+            "zh": "于嗟阔兮，",
+            "tw": "可叹相隔遥远，",
+            "en": "Alas, how far apart,"
+          },
+          {
+            "zh": "不我活兮。",
+            "tw": "不让我相聚。",
+            "en": "it keeps me from life with you."
+          },
+          {
+            "zh": "于嗟洵兮，",
+            "tw": "可叹实在久长，",
+            "en": "Alas, how long the parting,"
+          },
+          {
+            "zh": "不我信兮。",
+            "tw": "不让我守信约。",
+            "en": "it keeps me from my pledge."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -910,6 +2161,103 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "击鼓其镗，",
+          "tw": "击起战鼓镗镗，",
+          "en": "The drums are beaten loud,"
+        },
+        {
+          "zh": "踊跃用兵。",
+          "tw": "踊跃操练用兵。",
+          "en": "they leap to train for war."
+        },
+        {
+          "zh": "土国城漕，",
+          "tw": "国内筑城漕邑，",
+          "en": "At home they build the walls,"
+        },
+        {
+          "zh": "我独南行。",
+          "tw": "独我南行从征。",
+          "en": "but I must march to the south."
+        }
+      ],
+      [
+        {
+          "zh": "从孙子仲，",
+          "tw": "跟随孙仲元帅，",
+          "en": "I follow Sun Zhong,"
+        },
+        {
+          "zh": "平陈与宋。",
+          "tw": "调停陈国宋国。",
+          "en": "to pacify Chen and Song."
+        },
+        {
+          "zh": "不我以归，",
+          "tw": "不许我回归乡，",
+          "en": "They will not let me home,"
+        },
+        {
+          "zh": "忧心有忡。",
+          "tw": "忧心忡忡难当。",
+          "en": "my worried heart is sore."
+        }
+      ],
+      [
+        {
+          "zh": "爰居爰处？爰丧其马？于以求之？于林之下。",
+          "tw": "何处安身？何处歇马？马儿走失，去哪寻它？原来在树林之下。",
+          "en": "Where to dwell, where to rest? Where is my lost horse? I seek it — beneath the trees."
+        }
+      ],
+      [
+        {
+          "zh": "死生契阔，",
+          "tw": "生死离合聚散，",
+          "en": "In life and death we parted,"
+        },
+        {
+          "zh": "与子成说。",
+          "tw": "与你立下誓约。",
+          "en": "I made my vow with you."
+        },
+        {
+          "zh": "执子之手，",
+          "tw": "紧握你的手，",
+          "en": "I held your hand,"
+        },
+        {
+          "zh": "与子偕老。",
+          "tw": "与你白头到老。",
+          "en": "and said we'd grow old together."
+        }
+      ],
+      [
+        {
+          "zh": "于嗟阔兮，",
+          "tw": "可叹相隔遥远，",
+          "en": "Alas, how far apart,"
+        },
+        {
+          "zh": "不我活兮。",
+          "tw": "不让我相聚。",
+          "en": "it keeps me from life with you."
+        },
+        {
+          "zh": "于嗟洵兮，",
+          "tw": "可叹实在久长，",
+          "en": "Alas, how long the parting,"
+        },
+        {
+          "zh": "不我信兮。",
+          "tw": "不让我守信约。",
+          "en": "it keeps me from my pledge."
+        }
+      ]
     ]
   },
   {
@@ -989,7 +2337,97 @@ const POEMS = [
           "m": "Good; worthy."
         }
       ],
-      "scene": "Mother's Day events, filial-piety displays, family-tradition publicity, and study-tour bases."
+      "scene": "Mother's Day events, filial-piety displays, family-tradition publicity, and study-tour bases.",
+      "fullTr": [
+        [
+          {
+            "zh": "凯风自南，",
+            "tw": "和暖南风吹来，",
+            "en": "The gentle south wind blows,"
+          },
+          {
+            "zh": "吹彼棘心。",
+            "tw": "吹拂酸枣嫩心。",
+            "en": "upon the thorn's young shoot."
+          },
+          {
+            "zh": "棘心夭夭，",
+            "tw": "棘心柔嫩繁茂，",
+            "en": "The shoot grows tender,"
+          },
+          {
+            "zh": "母氏劬劳。",
+            "tw": "母亲辛勤操劳。",
+            "en": "my mother toiled for me."
+          }
+        ],
+        [
+          {
+            "zh": "凯风自南，",
+            "tw": "和暖南风吹来，",
+            "en": "The gentle south wind blows,"
+          },
+          {
+            "zh": "吹彼棘薪。",
+            "tw": "吹拂酸枣成薪。",
+            "en": "upon the thorn now fuel."
+          },
+          {
+            "zh": "母氏圣善，",
+            "tw": "母亲圣洁善良，",
+            "en": "My mother is good and kind,"
+          },
+          {
+            "zh": "我无令人。",
+            "tw": "我却不成材人。",
+            "en": "I, unworthy, shame her."
+          }
+        ],
+        [
+          {
+            "zh": "爰有寒泉，",
+            "tw": "那里有寒泉水，",
+            "en": "There is the cold spring,"
+          },
+          {
+            "zh": "在浚之下。",
+            "tw": "在浚城之下流。",
+            "en": "flowing beneath Jun."
+          },
+          {
+            "zh": "有子七人，",
+            "tw": "虽有儿子七人，",
+            "en": "Seven sons have I borne,"
+          },
+          {
+            "zh": "母氏劳苦。",
+            "tw": "母亲劳苦不休。",
+            "en": "yet my mother's toil is hard."
+          }
+        ],
+        [
+          {
+            "zh": "睍睆黄鸟，",
+            "tw": "黄鸟鸣声清丽，",
+            "en": "The oriole sings sweet,"
+          },
+          {
+            "zh": "载好其音。",
+            "tw": "唱出婉转好音。",
+            "en": "with pleasant voice."
+          },
+          {
+            "zh": "有子七人，",
+            "tw": "虽有儿子七人，",
+            "en": "Seven sons have I borne,"
+          },
+          {
+            "zh": "莫慰母心。",
+            "tw": "无人慰藉母心。",
+            "en": "yet none can comfort her."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1058,6 +2496,96 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "凯风自南，",
+          "tw": "和暖南风吹来，",
+          "en": "The gentle south wind blows,"
+        },
+        {
+          "zh": "吹彼棘心。",
+          "tw": "吹拂酸枣嫩心。",
+          "en": "upon the thorn's young shoot."
+        },
+        {
+          "zh": "棘心夭夭，",
+          "tw": "棘心柔嫩繁茂，",
+          "en": "The shoot grows tender,"
+        },
+        {
+          "zh": "母氏劬劳。",
+          "tw": "母亲辛勤操劳。",
+          "en": "my mother toiled for me."
+        }
+      ],
+      [
+        {
+          "zh": "凯风自南，",
+          "tw": "和暖南风吹来，",
+          "en": "The gentle south wind blows,"
+        },
+        {
+          "zh": "吹彼棘薪。",
+          "tw": "吹拂酸枣成薪。",
+          "en": "upon the thorn now fuel."
+        },
+        {
+          "zh": "母氏圣善，",
+          "tw": "母亲圣洁善良，",
+          "en": "My mother is good and kind,"
+        },
+        {
+          "zh": "我无令人。",
+          "tw": "我却不成材人。",
+          "en": "I, unworthy, shame her."
+        }
+      ],
+      [
+        {
+          "zh": "爰有寒泉，",
+          "tw": "那里有寒泉水，",
+          "en": "There is the cold spring,"
+        },
+        {
+          "zh": "在浚之下。",
+          "tw": "在浚城之下流。",
+          "en": "flowing beneath Jun."
+        },
+        {
+          "zh": "有子七人，",
+          "tw": "虽有儿子七人，",
+          "en": "Seven sons have I borne,"
+        },
+        {
+          "zh": "母氏劳苦。",
+          "tw": "母亲劳苦不休。",
+          "en": "yet my mother's toil is hard."
+        }
+      ],
+      [
+        {
+          "zh": "睍睆黄鸟，",
+          "tw": "黄鸟鸣声清丽，",
+          "en": "The oriole sings sweet,"
+        },
+        {
+          "zh": "载好其音。",
+          "tw": "唱出婉转好音。",
+          "en": "with pleasant voice."
+        },
+        {
+          "zh": "有子七人，",
+          "tw": "虽有儿子七人，",
+          "en": "Seven sons have I borne,"
+        },
+        {
+          "zh": "莫慰母心。",
+          "tw": "无人慰藉母心。",
+          "en": "yet none can comfort her."
+        }
+      ]
     ]
   },
   {
@@ -1117,7 +2645,97 @@ const POEMS = [
           "m": "How; why."
         }
       ],
-      "scene": "Gentleman-culture displays, integrity-culture walls, and character-education scenes."
+      "scene": "Gentleman-culture displays, integrity-culture walls, and character-education scenes.",
+      "fullTr": [
+        [
+          {
+            "zh": "雄雉于飞，",
+            "tw": "雄雉展翅飞，",
+            "en": "The male pheasant flies,"
+          },
+          {
+            "zh": "泄泄其羽。",
+            "tw": "缓缓舒其羽。",
+            "en": "slowly spreading plumes."
+          },
+          {
+            "zh": "我之怀矣，",
+            "tw": "我所怀念的人，",
+            "en": "He whom I miss,"
+          },
+          {
+            "zh": "自诒伊阻。",
+            "tw": "自招这阻隔。",
+            "en": "has brought me this woe."
+          }
+        ],
+        [
+          {
+            "zh": "雄雉于飞，",
+            "tw": "雄雉展翅飞，",
+            "en": "The male pheasant flies,"
+          },
+          {
+            "zh": "下上其音。",
+            "tw": "鸣声上下传。",
+            "en": "its voice high and low."
+          },
+          {
+            "zh": "展矣君子，",
+            "tw": "诚实的君子，",
+            "en": "O steadfast gentleman,"
+          },
+          {
+            "zh": "实劳我心。",
+            "tw": "实使我心劳。",
+            "en": "you truly grieve my heart."
+          }
+        ],
+        [
+          {
+            "zh": "瞻彼日月，",
+            "tw": "仰望那日月，",
+            "en": "I gaze at sun and moon,"
+          },
+          {
+            "zh": "悠悠我思。",
+            "tw": "悠悠是我相思。",
+            "en": "my thoughts drift far and long."
+          },
+          {
+            "zh": "道之云远，",
+            "tw": "道路那样遥远，",
+            "en": "The way is so distant,"
+          },
+          {
+            "zh": "曷云能来？",
+            "tw": "何时才能归来？",
+            "en": "how can he ever come?"
+          }
+        ],
+        [
+          {
+            "zh": "百尔君子，",
+            "tw": "你们众位君子，",
+            "en": "You hundred gentlemen,"
+          },
+          {
+            "zh": "不知德行。",
+            "tw": "不知修德行事。",
+            "en": "you know not virtue's way."
+          },
+          {
+            "zh": "不忮不求，",
+            "tw": "不嫉妒不贪求，",
+            "en": "Free of envy, free of want,"
+          },
+          {
+            "zh": "何用不臧。",
+            "tw": "何事不向好？",
+            "en": "what then can go amiss?"
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1192,6 +2810,96 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "雄雉于飞，",
+          "tw": "雄雉展翅飞，",
+          "en": "The male pheasant flies,"
+        },
+        {
+          "zh": "泄泄其羽。",
+          "tw": "缓缓舒其羽。",
+          "en": "slowly spreading plumes."
+        },
+        {
+          "zh": "我之怀矣，",
+          "tw": "我所怀念的人，",
+          "en": "He whom I miss,"
+        },
+        {
+          "zh": "自诒伊阻。",
+          "tw": "自招这阻隔。",
+          "en": "has brought me this woe."
+        }
+      ],
+      [
+        {
+          "zh": "雄雉于飞，",
+          "tw": "雄雉展翅飞，",
+          "en": "The male pheasant flies,"
+        },
+        {
+          "zh": "下上其音。",
+          "tw": "鸣声上下传。",
+          "en": "its voice high and low."
+        },
+        {
+          "zh": "展矣君子，",
+          "tw": "诚实的君子，",
+          "en": "O steadfast gentleman,"
+        },
+        {
+          "zh": "实劳我心。",
+          "tw": "实使我心劳。",
+          "en": "you truly grieve my heart."
+        }
+      ],
+      [
+        {
+          "zh": "瞻彼日月，",
+          "tw": "仰望那日月，",
+          "en": "I gaze at sun and moon,"
+        },
+        {
+          "zh": "悠悠我思。",
+          "tw": "悠悠是我相思。",
+          "en": "my thoughts drift far and long."
+        },
+        {
+          "zh": "道之云远，",
+          "tw": "道路那样遥远，",
+          "en": "The way is so distant,"
+        },
+        {
+          "zh": "曷云能来？",
+          "tw": "何时才能归来？",
+          "en": "how can he ever come?"
+        }
+      ],
+      [
+        {
+          "zh": "百尔君子，",
+          "tw": "你们众位君子，",
+          "en": "You hundred gentlemen,"
+        },
+        {
+          "zh": "不知德行。",
+          "tw": "不知修德行事。",
+          "en": "you know not virtue's way."
+        },
+        {
+          "zh": "不忮不求，",
+          "tw": "不嫉妒不贪求，",
+          "en": "Free of envy, free of want,"
+        },
+        {
+          "zh": "何用不臧。",
+          "tw": "何事不向好？",
+          "en": "what then can go amiss?"
+        }
+      ]
     ]
   },
   {
@@ -1261,7 +2969,97 @@ const POEMS = [
           "m": "Here, the beloved."
         }
       ],
-      "scene": "Courtship-culture scenes, wetland parks, and romance-themed photo spots."
+      "scene": "Courtship-culture scenes, wetland parks, and romance-themed photo spots.",
+      "fullTr": [
+        [
+          {
+            "zh": "匏有苦叶，",
+            "tw": "匏瓜叶已枯苦，",
+            "en": "The gourd has bitter leaves,"
+          },
+          {
+            "zh": "济有深涉。",
+            "tw": "济水深处可涉。",
+            "en": "the Ji has fords deep."
+          },
+          {
+            "zh": "深则厉，",
+            "tw": "水深连衣渡，",
+            "en": "Deep, then wade in cloak;"
+          },
+          {
+            "zh": "浅则揭。",
+            "tw": "水浅提起衣。",
+            "en": "shallow, then lift the hem."
+          }
+        ],
+        [
+          {
+            "zh": "有瀰济盈，",
+            "tw": "济水漫漫涨满，",
+            "en": "The Ji brims full and wide,"
+          },
+          {
+            "zh": "有鷕雉鸣。",
+            "tw": "野鸡咯咯鸣叫。",
+            "en": "a pheasant cries shrill."
+          },
+          {
+            "zh": "济盈不濡轨，",
+            "tw": "水满不湿轴头，",
+            "en": "Full though it is, not wetting the axle,"
+          },
+          {
+            "zh": "雉鸣求其牡。",
+            "tw": "雌雉鸣叫求偶。",
+            "en": "the pheasant calls for her mate."
+          }
+        ],
+        [
+          {
+            "zh": "雝雝鸣雁，",
+            "tw": "大雁雝雝和鸣，",
+            "en": "The wild geese honk in pairs,"
+          },
+          {
+            "zh": "旭日始旦。",
+            "tw": "旭日初升天明。",
+            "en": "the morning sun just risen."
+          },
+          {
+            "zh": "士如归妻，",
+            "tw": "男子若娶妻，",
+            "en": "If a man would wed,"
+          },
+          {
+            "zh": "迨冰未泮。",
+            "tw": "趁冰未消迎娶。",
+            "en": "let him haste ere ice melts."
+          }
+        ],
+        [
+          {
+            "zh": "招招舟子，",
+            "tw": "船夫招手相唤，",
+            "en": "The boatman beckons,"
+          },
+          {
+            "zh": "人涉卬否。",
+            "tw": "别人渡河我不渡。",
+            "en": "others cross, not I."
+          },
+          {
+            "zh": "人涉卬否，",
+            "tw": "别人渡河我不渡，",
+            "en": "Others cross, not I,"
+          },
+          {
+            "zh": "卬须我友。",
+            "tw": "我等我的友人。",
+            "en": "I wait for my friend."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1336,6 +3134,96 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "匏有苦叶，",
+          "tw": "匏瓜叶已枯苦，",
+          "en": "The gourd has bitter leaves,"
+        },
+        {
+          "zh": "济有深涉。",
+          "tw": "济水深处可涉。",
+          "en": "the Ji has fords deep."
+        },
+        {
+          "zh": "深则厉，",
+          "tw": "水深连衣渡，",
+          "en": "Deep, then wade in cloak;"
+        },
+        {
+          "zh": "浅则揭。",
+          "tw": "水浅提起衣。",
+          "en": "shallow, then lift the hem."
+        }
+      ],
+      [
+        {
+          "zh": "有瀰济盈，",
+          "tw": "济水漫漫涨满，",
+          "en": "The Ji brims full and wide,"
+        },
+        {
+          "zh": "有鷕雉鸣。",
+          "tw": "野鸡咯咯鸣叫。",
+          "en": "a pheasant cries shrill."
+        },
+        {
+          "zh": "济盈不濡轨，",
+          "tw": "水满不湿轴头，",
+          "en": "Full though it is, not wetting the axle,"
+        },
+        {
+          "zh": "雉鸣求其牡。",
+          "tw": "雌雉鸣叫求偶。",
+          "en": "the pheasant calls for her mate."
+        }
+      ],
+      [
+        {
+          "zh": "雝雝鸣雁，",
+          "tw": "大雁雝雝和鸣，",
+          "en": "The wild geese honk in pairs,"
+        },
+        {
+          "zh": "旭日始旦。",
+          "tw": "旭日初升天明。",
+          "en": "the morning sun just risen."
+        },
+        {
+          "zh": "士如归妻，",
+          "tw": "男子若娶妻，",
+          "en": "If a man would wed,"
+        },
+        {
+          "zh": "迨冰未泮。",
+          "tw": "趁冰未消迎娶。",
+          "en": "let him haste ere ice melts."
+        }
+      ],
+      [
+        {
+          "zh": "招招舟子，",
+          "tw": "船夫招手相唤，",
+          "en": "The boatman beckons,"
+        },
+        {
+          "zh": "人涉卬否。",
+          "tw": "别人渡河我不渡。",
+          "en": "others cross, not I."
+        },
+        {
+          "zh": "人涉卬否，",
+          "tw": "别人渡河我不渡，",
+          "en": "Others cross, not I,"
+        },
+        {
+          "zh": "卬须我友。",
+          "tw": "我等我的友人。",
+          "en": "I wait for my friend."
+        }
+      ]
     ]
   },
   {
@@ -1430,6 +3318,260 @@ const POEMS = [
           "p": "pú fú",
           "m": "To crawl; here, to exert oneself."
         }
+      ],
+      "fullTr": [
+        [
+          {
+            "zh": "习习谷风，",
+            "tw": "谷风习习吹来，",
+            "en": "The valley wind blows soft,"
+          },
+          {
+            "zh": "以阴以雨。",
+            "tw": "带来阴云细雨。",
+            "en": "with shade and with rain."
+          },
+          {
+            "zh": "黾勉同心，",
+            "tw": "曾勉力同其心，",
+            "en": "We strove with one heart,"
+          },
+          {
+            "zh": "不宜有怒。",
+            "tw": "本不该有怒气。",
+            "en": "you should not have been angry."
+          },
+          {
+            "zh": "采葑采菲，",
+            "tw": "采蔓菁采萝卜，",
+            "en": "I gathered mustard and radish,"
+          },
+          {
+            "zh": "无以下体。",
+            "tw": "莫嫌弃其根体。",
+            "en": "do not spurn their roots."
+          },
+          {
+            "zh": "德音莫违，",
+            "tw": "好话莫要违背，",
+            "en": "Do not break your pledged word,"
+          },
+          {
+            "zh": "及尔同死。",
+            "tw": "曾约与你同死。",
+            "en": "to die together with you."
+          }
+        ],
+        [
+          {
+            "zh": "行道迟迟，",
+            "tw": "走在路上迟迟，",
+            "en": "I walked the road so slow,"
+          },
+          {
+            "zh": "中心有违。",
+            "tw": "心中犹豫不舍。",
+            "en": "my heart loath to part."
+          },
+          {
+            "zh": "不远伊迩，",
+            "tw": "送我不远就近，",
+            "en": "You saw me off not far,"
+          },
+          {
+            "zh": "薄送我畿。",
+            "tw": "只送到门槛边。",
+            "en": "but to the threshold's start."
+          },
+          {
+            "zh": "谁谓荼苦，",
+            "tw": "谁说荼菜味苦，",
+            "en": "Who says the bitter herb is bitter?"
+          },
+          {
+            "zh": "其甘如荠。",
+            "tw": "其实甜如荠菜。",
+            "en": "It is sweet as shepherd's purse to me."
+          },
+          {
+            "zh": "宴尔新婚，",
+            "tw": "你欢宴迎新婚，",
+            "en": "You feast with your new bride,"
+          },
+          {
+            "zh": "如兄如弟。",
+            "tw": "亲密如兄如弟。",
+            "en": "close as brothers in delight."
+          }
+        ],
+        [
+          {
+            "zh": "泾以渭浊，",
+            "tw": "泾水因渭而浊，",
+            "en": "The Jing is muddy by the Wei,"
+          },
+          {
+            "zh": "湜湜其沚。",
+            "tw": "静止则清见底。",
+            "en": "clear when still at rest."
+          },
+          {
+            "zh": "宴尔新婚，",
+            "tw": "你欢宴迎新婚，",
+            "en": "You feast with your new bride,"
+          },
+          {
+            "zh": "不我屑以。",
+            "tw": "不肯把我理睬。",
+            "en": "and will not regard me."
+          },
+          {
+            "zh": "毋逝我梁，",
+            "tw": "莫到我的鱼梁，",
+            "en": "Do not go to my weir,"
+          },
+          {
+            "zh": "毋发我笱。",
+            "tw": "莫动我的鱼篓。",
+            "en": "do not disturb my trap."
+          },
+          {
+            "zh": "我躬不阅，",
+            "tw": "我身不被容纳，",
+            "en": "My own self is not welcome,"
+          },
+          {
+            "zh": "遑恤我后。",
+            "tw": "哪顾我后事？",
+            "en": "how care for what's after?"
+          }
+        ],
+        [
+          {
+            "zh": "就其深矣，",
+            "tw": "遇到水深处，",
+            "en": "Where the water is deep,"
+          },
+          {
+            "zh": "方之舟之。",
+            "tw": "用筏用舟渡。",
+            "en": "I ferried with boat and raft."
+          },
+          {
+            "zh": "就其浅矣，",
+            "tw": "遇到水浅处，",
+            "en": "Where the water is shallow,"
+          },
+          {
+            "zh": "泳之游之。",
+            "tw": "游泳涉水过。",
+            "en": "I swam and waded through."
+          },
+          {
+            "zh": "何有何亡，",
+            "tw": "家中有无什么，",
+            "en": "What there was or was not,"
+          },
+          {
+            "zh": "黾勉求之。",
+            "tw": "我都勉力谋求。",
+            "en": "I strove to provide."
+          },
+          {
+            "zh": "凡民有丧，",
+            "tw": "凡邻里有丧事，",
+            "en": "When any mourned their dead,"
+          },
+          {
+            "zh": "匍匐救之。",
+            "tw": "我爬去救助他。",
+            "en": "I crawled to give them aid."
+          }
+        ],
+        [
+          {
+            "zh": "不我能慉，",
+            "tw": "你不能养爱我，",
+            "en": "You could not cherish me,"
+          },
+          {
+            "zh": "反以我为雠。",
+            "tw": "反把我当仇敌。",
+            "en": "but turned me to a foe."
+          },
+          {
+            "zh": "既阻我德，",
+            "tw": "既拒绝我好意，",
+            "en": "You spurned my goodness,"
+          },
+          {
+            "zh": "贾用不售。",
+            "tw": "如货卖不出去。",
+            "en": "like goods that would not sell."
+          },
+          {
+            "zh": "昔育恐育鞫，",
+            "tw": "从前怕穷怕困，",
+            "en": "Of old we feared want and need,"
+          },
+          {
+            "zh": "及尔颠覆。",
+            "tw": "与你共度艰难。",
+            "en": "and with you faced downfall."
+          },
+          {
+            "zh": "既生既育，",
+            "tw": "如今既已生养，",
+            "en": "Now that we have living,"
+          },
+          {
+            "zh": "比予于毒。",
+            "tw": "却把我比毒虫。",
+            "en": "you liken me to poison."
+          }
+        ],
+        [
+          {
+            "zh": "我有旨蓄，",
+            "tw": "我有甘美储备，",
+            "en": "I have stored sweet provisions,"
+          },
+          {
+            "zh": "亦以御冬。",
+            "tw": "用来抵御寒冬。",
+            "en": "to keep out winter's cold."
+          },
+          {
+            "zh": "宴尔新婚，",
+            "tw": "你欢宴迎新婚，",
+            "en": "You feast with your new bride,"
+          },
+          {
+            "zh": "以我御穷。",
+            "tw": "用我御你贫穷。",
+            "en": "but used me in your want."
+          },
+          {
+            "zh": "有洸有溃，",
+            "tw": "又凶暴又粗暴，",
+            "en": "You stormed and you raged,"
+          },
+          {
+            "zh": "既诒我肄。",
+            "tw": "留给我苦劳役。",
+            "en": "and left me toil and care."
+          },
+          {
+            "zh": "不念昔者，",
+            "tw": "不念往日情分，",
+            "en": "You forget the days gone by,"
+          },
+          {
+            "zh": "伊余来塈。",
+            "tw": "那时爱我如斯。",
+            "en": "when you came to me with love."
+          }
+        ]
       ]
     },
     "fullNotes": [
@@ -1541,6 +3683,260 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "习习谷风，",
+          "tw": "谷风习习吹来，",
+          "en": "The valley wind blows soft,"
+        },
+        {
+          "zh": "以阴以雨。",
+          "tw": "带来阴云细雨。",
+          "en": "with shade and with rain."
+        },
+        {
+          "zh": "黾勉同心，",
+          "tw": "曾勉力同其心，",
+          "en": "We strove with one heart,"
+        },
+        {
+          "zh": "不宜有怒。",
+          "tw": "本不该有怒气。",
+          "en": "you should not have been angry."
+        },
+        {
+          "zh": "采葑采菲，",
+          "tw": "采蔓菁采萝卜，",
+          "en": "I gathered mustard and radish,"
+        },
+        {
+          "zh": "无以下体。",
+          "tw": "莫嫌弃其根体。",
+          "en": "do not spurn their roots."
+        },
+        {
+          "zh": "德音莫违，",
+          "tw": "好话莫要违背，",
+          "en": "Do not break your pledged word,"
+        },
+        {
+          "zh": "及尔同死。",
+          "tw": "曾约与你同死。",
+          "en": "to die together with you."
+        }
+      ],
+      [
+        {
+          "zh": "行道迟迟，",
+          "tw": "走在路上迟迟，",
+          "en": "I walked the road so slow,"
+        },
+        {
+          "zh": "中心有违。",
+          "tw": "心中犹豫不舍。",
+          "en": "my heart loath to part."
+        },
+        {
+          "zh": "不远伊迩，",
+          "tw": "送我不远就近，",
+          "en": "You saw me off not far,"
+        },
+        {
+          "zh": "薄送我畿。",
+          "tw": "只送到门槛边。",
+          "en": "but to the threshold's start."
+        },
+        {
+          "zh": "谁谓荼苦，",
+          "tw": "谁说荼菜味苦，",
+          "en": "Who says the bitter herb is bitter?"
+        },
+        {
+          "zh": "其甘如荠。",
+          "tw": "其实甜如荠菜。",
+          "en": "It is sweet as shepherd's purse to me."
+        },
+        {
+          "zh": "宴尔新婚，",
+          "tw": "你欢宴迎新婚，",
+          "en": "You feast with your new bride,"
+        },
+        {
+          "zh": "如兄如弟。",
+          "tw": "亲密如兄如弟。",
+          "en": "close as brothers in delight."
+        }
+      ],
+      [
+        {
+          "zh": "泾以渭浊，",
+          "tw": "泾水因渭而浊，",
+          "en": "The Jing is muddy by the Wei,"
+        },
+        {
+          "zh": "湜湜其沚。",
+          "tw": "静止则清见底。",
+          "en": "clear when still at rest."
+        },
+        {
+          "zh": "宴尔新婚，",
+          "tw": "你欢宴迎新婚，",
+          "en": "You feast with your new bride,"
+        },
+        {
+          "zh": "不我屑以。",
+          "tw": "不肯把我理睬。",
+          "en": "and will not regard me."
+        },
+        {
+          "zh": "毋逝我梁，",
+          "tw": "莫到我的鱼梁，",
+          "en": "Do not go to my weir,"
+        },
+        {
+          "zh": "毋发我笱。",
+          "tw": "莫动我的鱼篓。",
+          "en": "do not disturb my trap."
+        },
+        {
+          "zh": "我躬不阅，",
+          "tw": "我身不被容纳，",
+          "en": "My own self is not welcome,"
+        },
+        {
+          "zh": "遑恤我后。",
+          "tw": "哪顾我后事？",
+          "en": "how care for what's after?"
+        }
+      ],
+      [
+        {
+          "zh": "就其深矣，",
+          "tw": "遇到水深处，",
+          "en": "Where the water is deep,"
+        },
+        {
+          "zh": "方之舟之。",
+          "tw": "用筏用舟渡。",
+          "en": "I ferried with boat and raft."
+        },
+        {
+          "zh": "就其浅矣，",
+          "tw": "遇到水浅处，",
+          "en": "Where the water is shallow,"
+        },
+        {
+          "zh": "泳之游之。",
+          "tw": "游泳涉水过。",
+          "en": "I swam and waded through."
+        },
+        {
+          "zh": "何有何亡，",
+          "tw": "家中有无什么，",
+          "en": "What there was or was not,"
+        },
+        {
+          "zh": "黾勉求之。",
+          "tw": "我都勉力谋求。",
+          "en": "I strove to provide."
+        },
+        {
+          "zh": "凡民有丧，",
+          "tw": "凡邻里有丧事，",
+          "en": "When any mourned their dead,"
+        },
+        {
+          "zh": "匍匐救之。",
+          "tw": "我爬去救助他。",
+          "en": "I crawled to give them aid."
+        }
+      ],
+      [
+        {
+          "zh": "不我能慉，",
+          "tw": "你不能养爱我，",
+          "en": "You could not cherish me,"
+        },
+        {
+          "zh": "反以我为雠。",
+          "tw": "反把我当仇敌。",
+          "en": "but turned me to a foe."
+        },
+        {
+          "zh": "既阻我德，",
+          "tw": "既拒绝我好意，",
+          "en": "You spurned my goodness,"
+        },
+        {
+          "zh": "贾用不售。",
+          "tw": "如货卖不出去。",
+          "en": "like goods that would not sell."
+        },
+        {
+          "zh": "昔育恐育鞫，",
+          "tw": "从前怕穷怕困，",
+          "en": "Of old we feared want and need,"
+        },
+        {
+          "zh": "及尔颠覆。",
+          "tw": "与你共度艰难。",
+          "en": "and with you faced downfall."
+        },
+        {
+          "zh": "既生既育，",
+          "tw": "如今既已生养，",
+          "en": "Now that we have living,"
+        },
+        {
+          "zh": "比予于毒。",
+          "tw": "却把我比毒虫。",
+          "en": "you liken me to poison."
+        }
+      ],
+      [
+        {
+          "zh": "我有旨蓄，",
+          "tw": "我有甘美储备，",
+          "en": "I have stored sweet provisions,"
+        },
+        {
+          "zh": "亦以御冬。",
+          "tw": "用来抵御寒冬。",
+          "en": "to keep out winter's cold."
+        },
+        {
+          "zh": "宴尔新婚，",
+          "tw": "你欢宴迎新婚，",
+          "en": "You feast with your new bride,"
+        },
+        {
+          "zh": "以我御穷。",
+          "tw": "用我御你贫穷。",
+          "en": "but used me in your want."
+        },
+        {
+          "zh": "有洸有溃，",
+          "tw": "又凶暴又粗暴，",
+          "en": "You stormed and you raged,"
+        },
+        {
+          "zh": "既诒我肄。",
+          "tw": "留给我苦劳役。",
+          "en": "and left me toil and care."
+        },
+        {
+          "zh": "不念昔者，",
+          "tw": "不念往日情分，",
+          "en": "You forget the days gone by,"
+        },
+        {
+          "zh": "伊余来塈。",
+          "tw": "那时爱我如斯。",
+          "en": "when you came to me with love."
+        }
+      ]
     ]
   },
   {
@@ -1606,7 +4002,53 @@ const POEMS = [
           "m": "In the dew; toiling abroad."
         }
       ],
-      "scene": "Publicity for city strivers, laborers' culture walls, and nostalgia-themed vignettes."
+      "scene": "Publicity for city strivers, laborers' culture walls, and nostalgia-themed vignettes.",
+      "fullTr": [
+        [
+          {
+            "zh": "式微式微，",
+            "tw": "天色已晚天已晚，",
+            "en": "O dim, dim the light,"
+          },
+          {
+            "zh": "胡不归。",
+            "tw": "为何还不回还？",
+            "en": "why do you not return?"
+          },
+          {
+            "zh": "微君之故，",
+            "tw": "若非为了君主，",
+            "en": "But for our lord's sake,"
+          },
+          {
+            "zh": "胡为乎中露。",
+            "tw": "何故露中辛劳？",
+            "en": "why stand we in the dew?"
+          }
+        ],
+        [
+          {
+            "zh": "式微式微，",
+            "tw": "天色已晚天已晚，",
+            "en": "O dim, dim the light,"
+          },
+          {
+            "zh": "胡不归。",
+            "tw": "为何还不回还？",
+            "en": "why do you not return?"
+          },
+          {
+            "zh": "微君之躬，",
+            "tw": "若非为了君身，",
+            "en": "But for our lord's person,"
+          },
+          {
+            "zh": "胡为乎泥中。",
+            "tw": "何故泥中劳苦？",
+            "en": "why stand we in the mire?"
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1645,6 +4087,52 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "式微式微，",
+          "tw": "天色已晚天已晚，",
+          "en": "O dim, dim the light,"
+        },
+        {
+          "zh": "胡不归。",
+          "tw": "为何还不回还？",
+          "en": "why do you not return?"
+        },
+        {
+          "zh": "微君之故，",
+          "tw": "若非为了君主，",
+          "en": "But for our lord's sake,"
+        },
+        {
+          "zh": "胡为乎中露。",
+          "tw": "何故露中辛劳？",
+          "en": "why stand we in the dew?"
+        }
+      ],
+      [
+        {
+          "zh": "式微式微，",
+          "tw": "天色已晚天已晚，",
+          "en": "O dim, dim the light,"
+        },
+        {
+          "zh": "胡不归。",
+          "tw": "为何还不回还？",
+          "en": "why do you not return?"
+        },
+        {
+          "zh": "微君之躬，",
+          "tw": "若非为了君身，",
+          "en": "But for our lord's person,"
+        },
+        {
+          "zh": "胡为乎泥中。",
+          "tw": "何故泥中劳苦？",
+          "en": "why stand we in the mire?"
+        }
+      ]
     ]
   },
   {
@@ -1716,7 +4204,82 @@ const POEMS = [
           "m": "Companion; helper."
         }
       ],
-      "scene": "Exile-culture displays, historical-story walls, and study-tour explanation points."
+      "scene": "Exile-culture displays, historical-story walls, and study-tour explanation points.",
+      "fullTr": [
+        [
+          {
+            "zh": "旄丘之葛兮，",
+            "tw": "旄丘上的葛藤啊，",
+            "en": "O bindweed on the hill,"
+          },
+          {
+            "zh": "何诞之节兮。",
+            "tw": "为何藤节那样长？",
+            "en": "how long your joints have grown!"
+          },
+          {
+            "zh": "叔兮伯兮，",
+            "tw": "叔叔啊伯伯啊，",
+            "en": "O uncles, O elders,"
+          },
+          {
+            "zh": "何多日也？",
+            "tw": "为何这么多天？",
+            "en": "why so many days delay?"
+          }
+        ],
+        [
+          {
+            "zh": "何其处也？必有与也！何其久也？必有以也！",
+            "tw": "为何安居不出？必有所助！为何耽搁许久？必有所由！",
+            "en": "Why do you linger? You must have allies! Why so long delayed? You must have cause!"
+          }
+        ],
+        [
+          {
+            "zh": "狐裘蒙戎，",
+            "tw": "狐裘毛乱蓬蓬，",
+            "en": "In ragged fox-fur coat,"
+          },
+          {
+            "zh": "匪车不东。",
+            "tw": "不是车不东行。",
+            "en": "not that the carts won't go east."
+          },
+          {
+            "zh": "叔兮伯兮，",
+            "tw": "叔叔啊伯伯啊，",
+            "en": "O uncles, O elders,"
+          },
+          {
+            "zh": "靡所与同。",
+            "tw": "与我志不同道。",
+            "en": "you share not my cause."
+          }
+        ],
+        [
+          {
+            "zh": "琐兮尾兮，",
+            "tw": "渺小啊卑微啊，",
+            "en": "Small and lowly,"
+          },
+          {
+            "zh": "流离之子。",
+            "tw": "流离失所之人。",
+            "en": "the wandering refugee."
+          },
+          {
+            "zh": "叔兮伯兮，",
+            "tw": "叔叔啊伯伯啊，",
+            "en": "O uncles, O elders,"
+          },
+          {
+            "zh": "褎如充耳。",
+            "tw": "充耳不闻如聋。",
+            "en": "you stand deaf to my call."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1791,6 +4354,81 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "旄丘之葛兮，",
+          "tw": "旄丘上的葛藤啊，",
+          "en": "O bindweed on the hill,"
+        },
+        {
+          "zh": "何诞之节兮。",
+          "tw": "为何藤节那样长？",
+          "en": "how long your joints have grown!"
+        },
+        {
+          "zh": "叔兮伯兮，",
+          "tw": "叔叔啊伯伯啊，",
+          "en": "O uncles, O elders,"
+        },
+        {
+          "zh": "何多日也？",
+          "tw": "为何这么多天？",
+          "en": "why so many days delay?"
+        }
+      ],
+      [
+        {
+          "zh": "何其处也？必有与也！何其久也？必有以也！",
+          "tw": "为何安居不出？必有所助！为何耽搁许久？必有所由！",
+          "en": "Why do you linger? You must have allies! Why so long delayed? You must have cause!"
+        }
+      ],
+      [
+        {
+          "zh": "狐裘蒙戎，",
+          "tw": "狐裘毛乱蓬蓬，",
+          "en": "In ragged fox-fur coat,"
+        },
+        {
+          "zh": "匪车不东。",
+          "tw": "不是车不东行。",
+          "en": "not that the carts won't go east."
+        },
+        {
+          "zh": "叔兮伯兮，",
+          "tw": "叔叔啊伯伯啊，",
+          "en": "O uncles, O elders,"
+        },
+        {
+          "zh": "靡所与同。",
+          "tw": "与我志不同道。",
+          "en": "you share not my cause."
+        }
+      ],
+      [
+        {
+          "zh": "琐兮尾兮，",
+          "tw": "渺小啊卑微啊，",
+          "en": "Small and lowly,"
+        },
+        {
+          "zh": "流离之子。",
+          "tw": "流离失所之人。",
+          "en": "the wandering refugee."
+        },
+        {
+          "zh": "叔兮伯兮，",
+          "tw": "叔叔啊伯伯啊，",
+          "en": "O uncles, O elders,"
+        },
+        {
+          "zh": "褎如充耳。",
+          "tw": "充耳不闻如聋。",
+          "en": "you stand deaf to my call."
+        }
+      ]
     ]
   },
   {
@@ -1870,7 +4508,102 @@ const POEMS = [
           "m": "Horse reins."
         }
       ],
-      "scene": "Square cultural performances, intangible-heritage dance displays, and cultural-tour shows."
+      "scene": "Square cultural performances, intangible-heritage dance displays, and cultural-tour shows.",
+      "fullTr": [
+        [
+          {
+            "zh": "简兮简兮，",
+            "tw": "威武啊威武啊，",
+            "en": "O grand, O grand,"
+          },
+          {
+            "zh": "方将万舞。",
+            "tw": "正要跳万舞。",
+            "en": "now they begin the war-dance."
+          },
+          {
+            "zh": "日之方中，",
+            "tw": "日头正当中，",
+            "en": "The sun is at its height,"
+          },
+          {
+            "zh": "在前上处。",
+            "tw": "舞者在前列高处。",
+            "en": "the dancers stand up front."
+          }
+        ],
+        [
+          {
+            "zh": "硕人俣俣，",
+            "tw": "美人魁梧健壮，",
+            "en": "The tall man, stately and strong,"
+          },
+          {
+            "zh": "公庭万舞。",
+            "tw": "在公庭跳万舞。",
+            "en": "dances the war-dance in the hall."
+          },
+          {
+            "zh": "有力如虎，",
+            "tw": "有力气如猛虎，",
+            "en": "His strength is like a tiger's,"
+          },
+          {
+            "zh": "执辔如组。",
+            "tw": "执缰如执丝组。",
+            "en": "he holds the reins like plaited silk."
+          }
+        ],
+        [
+          {
+            "zh": "左手执籥，",
+            "tw": "左手执籥管，",
+            "en": "In his left hand the flute,"
+          },
+          {
+            "zh": "右手秉翟。",
+            "tw": "右手持雉羽。",
+            "en": "in his right the pheasant plume."
+          },
+          {
+            "zh": "赫如渥赭，",
+            "tw": "脸红如染朱砂，",
+            "en": "Red as if dyed with ochre,"
+          },
+          {
+            "zh": "公言锡爵。",
+            "tw": "公爷赐他酒爵。",
+            "en": "the lord awards him a cup."
+          }
+        ],
+        [
+          {
+            "zh": "山有榛，",
+            "tw": "山上长着榛树，",
+            "en": "On the hill grows the hazel,"
+          },
+          {
+            "zh": "隰有苓。",
+            "tw": "洼地长着苓草。",
+            "en": "in the lowland grows the lichen."
+          },
+          {
+            "zh": "云谁之思？西方美人。",
+            "tw": "我所思是谁？西方的美人。",
+            "en": "Whom do I think of? The beauty of the west."
+          },
+          {
+            "zh": "彼美人兮，",
+            "tw": "那美人啊，",
+            "en": "That beauty of mine,"
+          },
+          {
+            "zh": "西方之人兮。",
+            "tw": "是西方的人啊。",
+            "en": "he is a man of the west."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -1945,6 +4678,101 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "简兮简兮，",
+          "tw": "威武啊威武啊，",
+          "en": "O grand, O grand,"
+        },
+        {
+          "zh": "方将万舞。",
+          "tw": "正要跳万舞。",
+          "en": "now they begin the war-dance."
+        },
+        {
+          "zh": "日之方中，",
+          "tw": "日头正当中，",
+          "en": "The sun is at its height,"
+        },
+        {
+          "zh": "在前上处。",
+          "tw": "舞者在前列高处。",
+          "en": "the dancers stand up front."
+        }
+      ],
+      [
+        {
+          "zh": "硕人俣俣，",
+          "tw": "美人魁梧健壮，",
+          "en": "The tall man, stately and strong,"
+        },
+        {
+          "zh": "公庭万舞。",
+          "tw": "在公庭跳万舞。",
+          "en": "dances the war-dance in the hall."
+        },
+        {
+          "zh": "有力如虎，",
+          "tw": "有力气如猛虎，",
+          "en": "His strength is like a tiger's,"
+        },
+        {
+          "zh": "执辔如组。",
+          "tw": "执缰如执丝组。",
+          "en": "he holds the reins like plaited silk."
+        }
+      ],
+      [
+        {
+          "zh": "左手执籥，",
+          "tw": "左手执籥管，",
+          "en": "In his left hand the flute,"
+        },
+        {
+          "zh": "右手秉翟。",
+          "tw": "右手持雉羽。",
+          "en": "in his right the pheasant plume."
+        },
+        {
+          "zh": "赫如渥赭，",
+          "tw": "脸红如染朱砂，",
+          "en": "Red as if dyed with ochre,"
+        },
+        {
+          "zh": "公言锡爵。",
+          "tw": "公爷赐他酒爵。",
+          "en": "the lord awards him a cup."
+        }
+      ],
+      [
+        {
+          "zh": "山有榛，",
+          "tw": "山上长着榛树，",
+          "en": "On the hill grows the hazel,"
+        },
+        {
+          "zh": "隰有苓。",
+          "tw": "洼地长着苓草。",
+          "en": "in the lowland grows the lichen."
+        },
+        {
+          "zh": "云谁之思？西方美人。",
+          "tw": "我所思是谁？西方的美人。",
+          "en": "Whom do I think of? The beauty of the west."
+        },
+        {
+          "zh": "彼美人兮，",
+          "tw": "那美人啊，",
+          "en": "That beauty of mine,"
+        },
+        {
+          "zh": "西方之人兮。",
+          "tw": "是西方的人啊。",
+          "en": "he is a man of the west."
+        }
+      ]
     ]
   },
   {
@@ -2014,7 +4842,137 @@ const POEMS = [
           "m": "This; here."
         }
       ],
-      "scene": "Homesickness-themed publicity, wanderer-culture walls, and nostalgia-mailbox photo spots."
+      "scene": "Homesickness-themed publicity, wanderer-culture walls, and nostalgia-mailbox photo spots.",
+      "fullTr": [
+        [
+          {
+            "zh": "毖彼泉水，",
+            "tw": "那泉水汩汩流，",
+            "en": "The bubbling spring waters"
+          },
+          {
+            "zh": "亦流于淇。",
+            "tw": "也流入淇水。",
+            "en": "flow on into the Qi."
+          },
+          {
+            "zh": "有怀于卫，",
+            "tw": "心中怀念卫国，",
+            "en": "I long for the land of Wei,"
+          },
+          {
+            "zh": "靡日不思。",
+            "tw": "没有一天不想。",
+            "en": "not a day without thought."
+          },
+          {
+            "zh": "娈彼诸姬，",
+            "tw": "那些美好的姊妹，",
+            "en": "O lovely sisters of the Ji,"
+          },
+          {
+            "zh": "聊与之谋。",
+            "tw": "且与她们商议。",
+            "en": "with them I take my counsel."
+          }
+        ],
+        [
+          {
+            "zh": "出宿于泲，",
+            "tw": "出嫁宿在泲地，",
+            "en": "I lodged at Ji at departure,"
+          },
+          {
+            "zh": "饮饯于祢。",
+            "tw": "在祢地饮饯行。",
+            "en": "and drank farewell at Ni."
+          },
+          {
+            "zh": "女子有行，",
+            "tw": "女子既已出嫁，",
+            "en": "A girl once she is wed,"
+          },
+          {
+            "zh": "远父母兄弟，",
+            "tw": "远离父母兄弟。",
+            "en": "leaves her parents and brothers far."
+          },
+          {
+            "zh": "问我诸姑，",
+            "tw": "问候我的诸姑，",
+            "en": "I asked my aunts and kin,"
+          },
+          {
+            "zh": "遂及伯姊。",
+            "tw": "又及长姊一人。",
+            "en": "and then my elder sister too."
+          }
+        ],
+        [
+          {
+            "zh": "出宿于干，",
+            "tw": "出宿在干地，",
+            "en": "I lodged at Gan,"
+          },
+          {
+            "zh": "饮饯于言。",
+            "tw": "饯行在言地。",
+            "en": "drank farewell at Yan."
+          },
+          {
+            "zh": "载脂载辖，",
+            "tw": "涂油安上车轴，",
+            "en": "I greased the axle and pin,"
+          },
+          {
+            "zh": "还车言迈。",
+            "tw": "转身驱车前行。",
+            "en": "turned the car and set forth."
+          },
+          {
+            "zh": "遄臻于卫，",
+            "tw": "疾速抵达卫国，",
+            "en": "Swiftly I'd reach Wei,"
+          },
+          {
+            "zh": "不瑕有害？",
+            "tw": "岂会有什么害？",
+            "en": "would that be any harm?"
+          }
+        ],
+        [
+          {
+            "zh": "我思肥泉，",
+            "tw": "我思念肥泉，",
+            "en": "I think of the Fei spring,"
+          },
+          {
+            "zh": "兹之永叹。",
+            "tw": "为此长叹不息。",
+            "en": "and sigh for it ever."
+          },
+          {
+            "zh": "思须与漕，",
+            "tw": "思念须地与漕，",
+            "en": "I think of Xu and Cao,"
+          },
+          {
+            "zh": "我心悠悠。",
+            "tw": "我心悠悠难收。",
+            "en": "my heart drifts far away."
+          },
+          {
+            "zh": "驾言出游，",
+            "tw": "驾起车去出游，",
+            "en": "I drive forth to wander,"
+          },
+          {
+            "zh": "以写我忧。",
+            "tw": "以此抒写我忧。",
+            "en": "to write out my sorrow."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -2089,6 +5047,136 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "毖彼泉水，",
+          "tw": "那泉水汩汩流，",
+          "en": "The bubbling spring waters"
+        },
+        {
+          "zh": "亦流于淇。",
+          "tw": "也流入淇水。",
+          "en": "flow on into the Qi."
+        },
+        {
+          "zh": "有怀于卫，",
+          "tw": "心中怀念卫国，",
+          "en": "I long for the land of Wei,"
+        },
+        {
+          "zh": "靡日不思。",
+          "tw": "没有一天不想。",
+          "en": "not a day without thought."
+        },
+        {
+          "zh": "娈彼诸姬，",
+          "tw": "那些美好的姊妹，",
+          "en": "O lovely sisters of the Ji,"
+        },
+        {
+          "zh": "聊与之谋。",
+          "tw": "且与她们商议。",
+          "en": "with them I take my counsel."
+        }
+      ],
+      [
+        {
+          "zh": "出宿于泲，",
+          "tw": "出嫁宿在泲地，",
+          "en": "I lodged at Ji at departure,"
+        },
+        {
+          "zh": "饮饯于祢。",
+          "tw": "在祢地饮饯行。",
+          "en": "and drank farewell at Ni."
+        },
+        {
+          "zh": "女子有行，",
+          "tw": "女子既已出嫁，",
+          "en": "A girl once she is wed,"
+        },
+        {
+          "zh": "远父母兄弟，",
+          "tw": "远离父母兄弟。",
+          "en": "leaves her parents and brothers far."
+        },
+        {
+          "zh": "问我诸姑，",
+          "tw": "问候我的诸姑，",
+          "en": "I asked my aunts and kin,"
+        },
+        {
+          "zh": "遂及伯姊。",
+          "tw": "又及长姊一人。",
+          "en": "and then my elder sister too."
+        }
+      ],
+      [
+        {
+          "zh": "出宿于干，",
+          "tw": "出宿在干地，",
+          "en": "I lodged at Gan,"
+        },
+        {
+          "zh": "饮饯于言。",
+          "tw": "饯行在言地。",
+          "en": "drank farewell at Yan."
+        },
+        {
+          "zh": "载脂载辖，",
+          "tw": "涂油安上车轴，",
+          "en": "I greased the axle and pin,"
+        },
+        {
+          "zh": "还车言迈。",
+          "tw": "转身驱车前行。",
+          "en": "turned the car and set forth."
+        },
+        {
+          "zh": "遄臻于卫，",
+          "tw": "疾速抵达卫国，",
+          "en": "Swiftly I'd reach Wei,"
+        },
+        {
+          "zh": "不瑕有害？",
+          "tw": "岂会有什么害？",
+          "en": "would that be any harm?"
+        }
+      ],
+      [
+        {
+          "zh": "我思肥泉，",
+          "tw": "我思念肥泉，",
+          "en": "I think of the Fei spring,"
+        },
+        {
+          "zh": "兹之永叹。",
+          "tw": "为此长叹不息。",
+          "en": "and sigh for it ever."
+        },
+        {
+          "zh": "思须与漕，",
+          "tw": "思念须地与漕，",
+          "en": "I think of Xu and Cao,"
+        },
+        {
+          "zh": "我心悠悠。",
+          "tw": "我心悠悠难收。",
+          "en": "my heart drifts far away."
+        },
+        {
+          "zh": "驾言出游，",
+          "tw": "驾起车去出游，",
+          "en": "I drive forth to wander,"
+        },
+        {
+          "zh": "以写我忧。",
+          "tw": "以此抒写我忧。",
+          "en": "to write out my sorrow."
+        }
+      ]
     ]
   },
   {
@@ -2167,6 +5255,104 @@ const POEMS = [
           "p": "zhé",
           "m": "To blame; to censure."
         }
+      ],
+      "fullTr": [
+        [
+          {
+            "zh": "出自北门，",
+            "tw": "从北门走出，",
+            "en": "I went out by the north gate,"
+          },
+          {
+            "zh": "忧心殷殷。",
+            "tw": "忧心深重。",
+            "en": "my worried heart weighed down."
+          },
+          {
+            "zh": "终窭且贫，",
+            "tw": "既穷困又清贫，",
+            "en": "Ever poor and ever needy,"
+          },
+          {
+            "zh": "莫知我艰。",
+            "tw": "无人知我艰难。",
+            "en": "none knows my hardship."
+          },
+          {
+            "zh": "已焉哉！天实为之，",
+            "tw": "算了吧！原是天意，",
+            "en": "It is done! Heaven has willed it,"
+          },
+          {
+            "zh": "谓之何哉！",
+            "tw": "又能说什么呢！",
+            "en": "what can I say of it!"
+          }
+        ],
+        [
+          {
+            "zh": "王事适我，",
+            "tw": "王室差事派我，",
+            "en": "The king's affairs fall to me,"
+          },
+          {
+            "zh": "政事一埤益我。",
+            "tw": "政事一并加给我。",
+            "en": "and public duty heaps on me."
+          },
+          {
+            "zh": "我入自外，",
+            "tw": "我从外归来，",
+            "en": "I come home from outside,"
+          },
+          {
+            "zh": "室人交遍谪我。",
+            "tw": "家人都责怪我。",
+            "en": "and my household blames me all."
+          },
+          {
+            "zh": "已焉哉！天实为之，",
+            "tw": "算了吧！原是天意，",
+            "en": "It is done! Heaven has willed it,"
+          },
+          {
+            "zh": "谓之何哉！",
+            "tw": "又能说什么呢！",
+            "en": "what can I say of it!"
+          }
+        ],
+        [
+          {
+            "zh": "王事敦我，",
+            "tw": "王室重担压我，",
+            "en": "The king's affairs press on me,"
+          },
+          {
+            "zh": "政事一埤遗我。",
+            "tw": "政事尽数遗给我。",
+            "en": "and public duty piles on me."
+          },
+          {
+            "zh": "我入自外，",
+            "tw": "我从外归来，",
+            "en": "I come home from outside,"
+          },
+          {
+            "zh": "室人交遍摧我。",
+            "tw": "家人都摧折我。",
+            "en": "and my household crushes me all."
+          },
+          {
+            "zh": "已焉哉！天实为之，",
+            "tw": "算了吧！原是天意，",
+            "en": "It is done! Heaven has willed it,"
+          },
+          {
+            "zh": "谓之何哉！",
+            "tw": "又能说什么呢！",
+            "en": "what can I say of it!"
+          }
+        ]
       ]
     },
     "fullNotes": [
@@ -2224,6 +5410,104 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "出自北门，",
+          "tw": "从北门走出，",
+          "en": "I went out by the north gate,"
+        },
+        {
+          "zh": "忧心殷殷。",
+          "tw": "忧心深重。",
+          "en": "my worried heart weighed down."
+        },
+        {
+          "zh": "终窭且贫，",
+          "tw": "既穷困又清贫，",
+          "en": "Ever poor and ever needy,"
+        },
+        {
+          "zh": "莫知我艰。",
+          "tw": "无人知我艰难。",
+          "en": "none knows my hardship."
+        },
+        {
+          "zh": "已焉哉！天实为之，",
+          "tw": "算了吧！原是天意，",
+          "en": "It is done! Heaven has willed it,"
+        },
+        {
+          "zh": "谓之何哉！",
+          "tw": "又能说什么呢！",
+          "en": "what can I say of it!"
+        }
+      ],
+      [
+        {
+          "zh": "王事适我，",
+          "tw": "王室差事派我，",
+          "en": "The king's affairs fall to me,"
+        },
+        {
+          "zh": "政事一埤益我。",
+          "tw": "政事一并加给我。",
+          "en": "and public duty heaps on me."
+        },
+        {
+          "zh": "我入自外，",
+          "tw": "我从外归来，",
+          "en": "I come home from outside,"
+        },
+        {
+          "zh": "室人交遍谪我。",
+          "tw": "家人都责怪我。",
+          "en": "and my household blames me all."
+        },
+        {
+          "zh": "已焉哉！天实为之，",
+          "tw": "算了吧！原是天意，",
+          "en": "It is done! Heaven has willed it,"
+        },
+        {
+          "zh": "谓之何哉！",
+          "tw": "又能说什么呢！",
+          "en": "what can I say of it!"
+        }
+      ],
+      [
+        {
+          "zh": "王事敦我，",
+          "tw": "王室重担压我，",
+          "en": "The king's affairs press on me,"
+        },
+        {
+          "zh": "政事一埤遗我。",
+          "tw": "政事尽数遗给我。",
+          "en": "and public duty piles on me."
+        },
+        {
+          "zh": "我入自外，",
+          "tw": "我从外归来，",
+          "en": "I come home from outside,"
+        },
+        {
+          "zh": "室人交遍摧我。",
+          "tw": "家人都摧折我。",
+          "en": "and my household crushes me all."
+        },
+        {
+          "zh": "已焉哉！天实为之，",
+          "tw": "算了吧！原是天意，",
+          "en": "It is done! Heaven has willed it,"
+        },
+        {
+          "zh": "谓之何哉！",
+          "tw": "又能说什么呢！",
+          "en": "what can I say of it!"
+        }
+      ]
     ]
   },
   {
@@ -2291,7 +5575,90 @@ const POEMS = [
           "m": "To go together; to depart side by side."
         }
       ],
-      "scene": "Winter cultural-tour scenes, companion-travel publicity, and friendship-themed photo spots."
+      "scene": "Winter cultural-tour scenes, companion-travel publicity, and friendship-themed photo spots.",
+      "fullTr": [
+        [
+          {
+            "zh": "北风其凉，",
+            "tw": "北风那样凉，",
+            "en": "The north wind blows so cold,"
+          },
+          {
+            "zh": "雨雪其雱。",
+            "tw": "大雪纷纷扬。",
+            "en": "snow falls in flurries."
+          },
+          {
+            "zh": "惠而好我，",
+            "tw": "你若惠爱于我，",
+            "en": "If you are kind and love me,"
+          },
+          {
+            "zh": "携手同行。",
+            "tw": "携手一同逃亡。",
+            "en": "take my hand and flee."
+          },
+          {
+            "zh": "其虚其邪？既亟只且！",
+            "tw": "还犹疑什么？事已急迫啦！",
+            "en": "Why loiter and delay? The peril is at hand!"
+          }
+        ],
+        [
+          {
+            "zh": "北风其喈，",
+            "tw": "北风那样疾，",
+            "en": "The north wind blows so shrill,"
+          },
+          {
+            "zh": "雨雪其霏。",
+            "tw": "大雪正霏霏。",
+            "en": "snow falls and drifts."
+          },
+          {
+            "zh": "惠而好我，",
+            "tw": "你若惠爱于我，",
+            "en": "If you are kind and love me,"
+          },
+          {
+            "zh": "携手同归。",
+            "tw": "携手同归隐去。",
+            "en": "take my hand and go."
+          },
+          {
+            "zh": "其虚其邪？既亟只且！",
+            "tw": "还犹疑什么？事已急迫啦！",
+            "en": "Why loiter and delay? The peril is at hand!"
+          }
+        ],
+        [
+          {
+            "zh": "莫赤匪狐，",
+            "tw": "没有不红的狐，",
+            "en": "No fox but is red,"
+          },
+          {
+            "zh": "莫黑匪乌。",
+            "tw": "没有不黑的乌。",
+            "en": "no crow but is black."
+          },
+          {
+            "zh": "惠而好我，",
+            "tw": "你若惠爱于我，",
+            "en": "If you are kind and love me,"
+          },
+          {
+            "zh": "携手同车。",
+            "tw": "携手同车离去。",
+            "en": "take my hand and ride."
+          },
+          {
+            "zh": "其虚其邪？既亟只且！",
+            "tw": "还犹疑什么？事已急迫啦！",
+            "en": "Why loiter and delay? The peril is at hand!"
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -2348,6 +5715,89 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "北风其凉，",
+          "tw": "北风那样凉，",
+          "en": "The north wind blows so cold,"
+        },
+        {
+          "zh": "雨雪其雱。",
+          "tw": "大雪纷纷扬。",
+          "en": "snow falls in flurries."
+        },
+        {
+          "zh": "惠而好我，",
+          "tw": "你若惠爱于我，",
+          "en": "If you are kind and love me,"
+        },
+        {
+          "zh": "携手同行。",
+          "tw": "携手一同逃亡。",
+          "en": "take my hand and flee."
+        },
+        {
+          "zh": "其虚其邪？既亟只且！",
+          "tw": "还犹疑什么？事已急迫啦！",
+          "en": "Why loiter and delay? The peril is at hand!"
+        }
+      ],
+      [
+        {
+          "zh": "北风其喈，",
+          "tw": "北风那样疾，",
+          "en": "The north wind blows so shrill,"
+        },
+        {
+          "zh": "雨雪其霏。",
+          "tw": "大雪正霏霏。",
+          "en": "snow falls and drifts."
+        },
+        {
+          "zh": "惠而好我，",
+          "tw": "你若惠爱于我，",
+          "en": "If you are kind and love me,"
+        },
+        {
+          "zh": "携手同归。",
+          "tw": "携手同归隐去。",
+          "en": "take my hand and go."
+        },
+        {
+          "zh": "其虚其邪？既亟只且！",
+          "tw": "还犹疑什么？事已急迫啦！",
+          "en": "Why loiter and delay? The peril is at hand!"
+        }
+      ],
+      [
+        {
+          "zh": "莫赤匪狐，",
+          "tw": "没有不红的狐，",
+          "en": "No fox but is red,"
+        },
+        {
+          "zh": "莫黑匪乌。",
+          "tw": "没有不黑的乌。",
+          "en": "no crow but is black."
+        },
+        {
+          "zh": "惠而好我，",
+          "tw": "你若惠爱于我，",
+          "en": "If you are kind and love me,"
+        },
+        {
+          "zh": "携手同车。",
+          "tw": "携手同车离去。",
+          "en": "take my hand and ride."
+        },
+        {
+          "zh": "其虚其邪？既亟只且！",
+          "tw": "还犹疑什么？事已急迫啦！",
+          "en": "Why loiter and delay? The peril is at hand!"
+        }
+      ]
     ]
   },
   {
@@ -2447,7 +5897,75 @@ const POEMS = [
           "m": "Fresh rush shoots."
         }
       ],
-      "scene": "Dating photo spots, youth-social scenes, and romance-themed interactive installations."
+      "scene": "Dating photo spots, youth-social scenes, and romance-themed interactive installations.",
+      "fullTr": [
+        [
+          {
+            "zh": "静女其姝，",
+            "tw": "娴静姑娘真美，",
+            "en": "The quiet girl is fair,"
+          },
+          {
+            "zh": "俟我于城隅。",
+            "tw": "约我在城角相会。",
+            "en": "she waits for me at the corner."
+          },
+          {
+            "zh": "爱而不见，",
+            "tw": "故意藏身不见，",
+            "en": "She hides and will not show,"
+          },
+          {
+            "zh": "搔首踟蹰。",
+            "tw": "我搔首徘徊不安。",
+            "en": "I scratch my head and pace."
+          }
+        ],
+        [
+          {
+            "zh": "静女其娈，",
+            "tw": "娴静姑娘娇美，",
+            "en": "The quiet girl is lovely,"
+          },
+          {
+            "zh": "贻我彤管。",
+            "tw": "赠我红管草。",
+            "en": "she gives me a red-tube grass."
+          },
+          {
+            "zh": "彤管有炜，",
+            "tw": "红管草色鲜明，",
+            "en": "The red-tube glows bright,"
+          },
+          {
+            "zh": "说怿女美。",
+            "tw": "我爱那草之美。",
+            "en": "I delight in its beauty."
+          }
+        ],
+        [
+          {
+            "zh": "自牧归荑，",
+            "tw": "从牧场送我白茅，",
+            "en": "From the meadow she brought reed-tips,"
+          },
+          {
+            "zh": "洵美且异。",
+            "tw": "实在美而珍异。",
+            "en": "truly fair and rare."
+          },
+          {
+            "zh": "匪女之为美，",
+            "tw": "不是草儿本身美，",
+            "en": "Not that the plant is fair,"
+          },
+          {
+            "zh": "美人之贻。",
+            "tw": "是美人所赠啊。",
+            "en": "but the giver is fair."
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -2504,6 +6022,74 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "静女其姝，",
+          "tw": "娴静姑娘真美，",
+          "en": "The quiet girl is fair,"
+        },
+        {
+          "zh": "俟我于城隅。",
+          "tw": "约我在城角相会。",
+          "en": "she waits for me at the corner."
+        },
+        {
+          "zh": "爱而不见，",
+          "tw": "故意藏身不见，",
+          "en": "She hides and will not show,"
+        },
+        {
+          "zh": "搔首踟蹰。",
+          "tw": "我搔首徘徊不安。",
+          "en": "I scratch my head and pace."
+        }
+      ],
+      [
+        {
+          "zh": "静女其娈，",
+          "tw": "娴静姑娘娇美，",
+          "en": "The quiet girl is lovely,"
+        },
+        {
+          "zh": "贻我彤管。",
+          "tw": "赠我红管草。",
+          "en": "she gives me a red-tube grass."
+        },
+        {
+          "zh": "彤管有炜，",
+          "tw": "红管草色鲜明，",
+          "en": "The red-tube glows bright,"
+        },
+        {
+          "zh": "说怿女美。",
+          "tw": "我爱那草之美。",
+          "en": "I delight in its beauty."
+        }
+      ],
+      [
+        {
+          "zh": "自牧归荑，",
+          "tw": "从牧场送我白茅，",
+          "en": "From the meadow she brought reed-tips,"
+        },
+        {
+          "zh": "洵美且异。",
+          "tw": "实在美而珍异。",
+          "en": "truly fair and rare."
+        },
+        {
+          "zh": "匪女之为美，",
+          "tw": "不是草儿本身美，",
+          "en": "Not that the plant is fair,"
+        },
+        {
+          "zh": "美人之贻。",
+          "tw": "是美人所赠啊。",
+          "en": "but the giver is fair."
+        }
+      ]
     ]
   },
   {
@@ -2592,6 +6178,74 @@ const POEMS = [
           "p": "qī shī",
           "m": "Hunchback; figuratively the ugly."
         }
+      ],
+      "fullTr": [
+        [
+          {
+            "zh": "新台有泚，",
+            "tw": "新台那样华美，",
+            "en": "The new terrace shines bright,"
+          },
+          {
+            "zh": "河水瀰瀰。",
+            "tw": "河水宽阔弥漫。",
+            "en": "the river spreads wide."
+          },
+          {
+            "zh": "燕婉之求，",
+            "tw": "本求那燕婉佳偶，",
+            "en": "She sought a gentle, graceful mate,"
+          },
+          {
+            "zh": "蘧篨不鲜。",
+            "tw": "得个癞虾蟆不鲜。",
+            "en": "but got a crookback, far from bright."
+          }
+        ],
+        [
+          {
+            "zh": "新台有洒，",
+            "tw": "新台那样高峻，",
+            "en": "The new terrace stands tall,"
+          },
+          {
+            "zh": "河水浼浼。",
+            "tw": "河水漫漫平满。",
+            "en": "the river flows full."
+          },
+          {
+            "zh": "燕婉之求，",
+            "tw": "本求那燕婉佳偶，",
+            "en": "She sought a gentle, graceful mate,"
+          },
+          {
+            "zh": "蘧篨不殄。",
+            "tw": "得个癞虾蟆不绝。",
+            "en": "but got a crookback, never to end."
+          }
+        ],
+        [
+          {
+            "zh": "鱼网之设，",
+            "tw": "鱼网张设水中，",
+            "en": "A fish-net was spread,"
+          },
+          {
+            "zh": "鸿则离之。",
+            "tw": "大雁却落其中。",
+            "en": "a goose was caught instead."
+          },
+          {
+            "zh": "燕婉之求，",
+            "tw": "本求那燕婉佳偶，",
+            "en": "She sought a gentle, graceful mate,"
+          },
+          {
+            "zh": "得此戚施。",
+            "tw": "得这驼背之人。",
+            "en": "but gained this hunchback instead."
+          }
+        ]
       ]
     },
     "fullNotes": [
@@ -2649,6 +6303,74 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "新台有泚，",
+          "tw": "新台那样华美，",
+          "en": "The new terrace shines bright,"
+        },
+        {
+          "zh": "河水瀰瀰。",
+          "tw": "河水宽阔弥漫。",
+          "en": "the river spreads wide."
+        },
+        {
+          "zh": "燕婉之求，",
+          "tw": "本求那燕婉佳偶，",
+          "en": "She sought a gentle, graceful mate,"
+        },
+        {
+          "zh": "蘧篨不鲜。",
+          "tw": "得个癞虾蟆不鲜。",
+          "en": "but got a crookback, far from bright."
+        }
+      ],
+      [
+        {
+          "zh": "新台有洒，",
+          "tw": "新台那样高峻，",
+          "en": "The new terrace stands tall,"
+        },
+        {
+          "zh": "河水浼浼。",
+          "tw": "河水漫漫平满。",
+          "en": "the river flows full."
+        },
+        {
+          "zh": "燕婉之求，",
+          "tw": "本求那燕婉佳偶，",
+          "en": "She sought a gentle, graceful mate,"
+        },
+        {
+          "zh": "蘧篨不殄。",
+          "tw": "得个癞虾蟆不绝。",
+          "en": "but got a crookback, never to end."
+        }
+      ],
+      [
+        {
+          "zh": "鱼网之设，",
+          "tw": "鱼网张设水中，",
+          "en": "A fish-net was spread,"
+        },
+        {
+          "zh": "鸿则离之。",
+          "tw": "大雁却落其中。",
+          "en": "a goose was caught instead."
+        },
+        {
+          "zh": "燕婉之求，",
+          "tw": "本求那燕婉佳偶，",
+          "en": "She sought a gentle, graceful mate,"
+        },
+        {
+          "zh": "得此戚施。",
+          "tw": "得这驼背之人。",
+          "en": "but gained this hunchback instead."
+        }
+      ]
     ]
   },
   {
@@ -2704,7 +6426,53 @@ const POEMS = [
           "m": "Unending worry."
         }
       ],
-      "scene": "Farewell-themed photo spots, kinship-and-friendship publicity, and wanderer-culture scenes."
+      "scene": "Farewell-themed photo spots, kinship-and-friendship publicity, and wanderer-culture scenes.",
+      "fullTr": [
+        [
+          {
+            "zh": "二子乘舟，",
+            "tw": "两位公子乘船，",
+            "en": "Two princes board the boat,"
+          },
+          {
+            "zh": "泛泛其景。",
+            "tw": "船影飘飘荡荡。",
+            "en": "its shadow drifts and sways."
+          },
+          {
+            "zh": "愿言思子，",
+            "tw": "我长久思念你，",
+            "en": "Long, long I think of you,"
+          },
+          {
+            "zh": "中心养养！",
+            "tw": "心中忧思惶惶！",
+            "en": "my heart is full of care!"
+          }
+        ],
+        [
+          {
+            "zh": "二子乘舟，",
+            "tw": "两位公子乘船，",
+            "en": "Two princes board the boat,"
+          },
+          {
+            "zh": "泛泛其逝。",
+            "tw": "船儿悠悠远去。",
+            "en": "it drifts and fades away."
+          },
+          {
+            "zh": "愿言思子，",
+            "tw": "我长久思念你，",
+            "en": "Long, long I think of you,"
+          },
+          {
+            "zh": "不瑕有害？",
+            "tw": "该不会遇害吧？",
+            "en": "surely no harm comes your way?"
+          }
+        ]
+      ]
     },
     "fullNotes": [
       {
@@ -2743,6 +6511,52 @@ const POEMS = [
           }
         ]
       }
+    ],
+    "fullTr": [
+      [
+        {
+          "zh": "二子乘舟，",
+          "tw": "两位公子乘船，",
+          "en": "Two princes board the boat,"
+        },
+        {
+          "zh": "泛泛其景。",
+          "tw": "船影飘飘荡荡。",
+          "en": "its shadow drifts and sways."
+        },
+        {
+          "zh": "愿言思子，",
+          "tw": "我长久思念你，",
+          "en": "Long, long I think of you,"
+        },
+        {
+          "zh": "中心养养！",
+          "tw": "心中忧思惶惶！",
+          "en": "my heart is full of care!"
+        }
+      ],
+      [
+        {
+          "zh": "二子乘舟，",
+          "tw": "两位公子乘船，",
+          "en": "Two princes board the boat,"
+        },
+        {
+          "zh": "泛泛其逝。",
+          "tw": "船儿悠悠远去。",
+          "en": "it drifts and fades away."
+        },
+        {
+          "zh": "愿言思子，",
+          "tw": "我长久思念你，",
+          "en": "Long, long I think of you,"
+        },
+        {
+          "zh": "不瑕有害？",
+          "tw": "该不会遇害吧？",
+          "en": "surely no harm comes your way?"
+        }
+      ]
     ]
   }
 ];

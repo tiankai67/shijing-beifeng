@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # 生成 诗经·邶风 站点数据 data.js
 # 用法: python gen_data.py  ->  输出 site/js/data.js
-import json, os
+import json, os, re
 
 # ============ UI 多语言字典 ============
 I18N = {
@@ -1082,6 +1082,234 @@ FULLNOTES = {
     ],
 }
 
+# 逐句对照白话（键为诗 id；每首按章，每章按句，与 full 拆分顺序严格对应）
+FULLVERSES_TW = {
+    1: [
+        ["荡起那柏木小船，", "它也随波漂流。", "长夜耿耿难成眠，", "似有隐忧在心头。", "并非我无美酒，", "聊以遨游消愁。"],
+        ["我的心并非明镜，", "不能什么都容纳。", "虽也有兄弟在，", "却不能够依靠。", "曾前去诉说苦衷，", "却惹得他恼怒。"],
+        ["我的心不是石头，", "不可随意转动。", "我的心不是草席，", "不可任意卷起。", "仪容闲雅端庄，", "不可随便挑选。"],
+        ["忧心悄悄深藏，", "得罪了众小人。", "遭逢苦难已多，", "受辱也不算少。", "静下心来细想，", "醒时捶胸心焦。"],
+        ["太阳啊月亮啊，", "为何轮替无光？我心忧伤，", "如脏衣未曾洗。", "静心思量，", "却无力奋飞远走。"],
+    ],
+    2: [
+        ["绿衣裳啊绿衣裳，", "绿衣衬着黄里子。", "心中的忧思啊，", "何时才能止息？"],
+        ["绿衣裳啊绿衣裳，", "绿衣配着黄下裳。", "心中的忧思啊，", "何时才能忘怀？"],
+        ["绿丝线啊绿丝线，", "是你亲手所织。", "我思念亡故的你，", "使我不犯过错。"],
+        ["细葛啊粗葛啊，", "风吹来阵阵凉。", "我思念亡故的你，", "实得我心所想。"],
+    ],
+    3: [
+        ["燕子双双飞，", "舒展着羽翼。", "这位姑娘出嫁，", "远送她到郊野。", "伫望不见身影，", "泪落如雨滂沱。"],
+        ["燕子双双飞，", "上下翻飞起舞。", "这位姑娘出嫁，", "远送她上归途。", "伫望不见身影，", "伫立暗自泣涕。"],
+        ["燕子双双飞，", "鸣声忽高忽低。", "这位姑娘出嫁，", "远送她去南方。", "伫望不见身影，", "实令我心劳苦。"],
+        ["二妹堪当重任，", "其心诚实深沉。", "既温和又恭顺，", "善良谨慎持身。", "常念先君遗训，", "以此勉励寡人。"],
+    ],
+    4: [
+        ["太阳啊月亮啊，", "光照这下界大地。", "竟有那样的人啊，", "不念旧情相处。", "何时才能安定？竟不顾念我？"],
+        ["太阳啊月亮啊，", "覆照这下界大地。", "竟有那样的人啊，", "不再与我相好。", "何时才能安定？竟不回报我？"],
+        ["太阳啊月亮啊，", "升起自东方。", "竟有那样的人啊，", "德行声名不良。", "何时才能安定？教人也能淡忘。"],
+        ["太阳啊月亮啊，", "自东方升起。", "父亲啊母亲啊，", "养我却不终老。", "何时才能安定？待我全无道理。"],
+    ],
+    5: [
+        ["风终日是暴风，", "他见我则含笑。", "戏谑放浪调笑，", "使我心中哀伤。"],
+        ["风终日且阴霾，", "他惠然肯来临。", "如今不来往了，", "悠悠是我相思。"],
+        ["风终日且阴沉，", "不多时又昏暗。", "醒着无法入眠，", "念及便打喷嚏。"],
+        ["天色阴沉昏暗，", "轰隆隆响着雷。", "醒着无法入眠，", "念及满心怀念。"],
+    ],
+    6: [
+        ["击起战鼓镗镗，", "踊跃操练用兵。", "国内筑城漕邑，", "独我南行从征。"],
+        ["跟随孙仲元帅，", "调停陈国宋国。", "不许我回归乡，", "忧心忡忡难当。"],
+        ["何处安身？何处歇马？马儿走失，去哪寻它？原来在树林之下。"],
+        ["生死离合聚散，", "与你立下誓约。", "紧握你的手，", "与你白头到老。"],
+        ["可叹相隔遥远，", "不让我相聚。", "可叹实在久长，", "不让我守信约。"],
+    ],
+    7: [
+        ["和暖南风吹来，", "吹拂酸枣嫩心。", "棘心柔嫩繁茂，", "母亲辛勤操劳。"],
+        ["和暖南风吹来，", "吹拂酸枣成薪。", "母亲圣洁善良，", "我却不成材人。"],
+        ["那里有寒泉水，", "在浚城之下流。", "虽有儿子七人，", "母亲劳苦不休。"],
+        ["黄鸟鸣声清丽，", "唱出婉转好音。", "虽有儿子七人，", "无人慰藉母心。"],
+    ],
+    8: [
+        ["雄雉展翅飞，", "缓缓舒其羽。", "我所怀念的人，", "自招这阻隔。"],
+        ["雄雉展翅飞，", "鸣声上下传。", "诚实的君子，", "实使我心劳。"],
+        ["仰望那日月，", "悠悠是我相思。", "道路那样遥远，", "何时才能归来？"],
+        ["你们众位君子，", "不知修德行事。", "不嫉妒不贪求，", "何事不向好？"],
+    ],
+    9: [
+        ["匏瓜叶已枯苦，", "济水深处可涉。", "水深连衣渡，", "水浅提起衣。"],
+        ["济水漫漫涨满，", "野鸡咯咯鸣叫。", "水满不湿轴头，", "雌雉鸣叫求偶。"],
+        ["大雁雝雝和鸣，", "旭日初升天明。", "男子若娶妻，", "趁冰未消迎娶。"],
+        ["船夫招手相唤，", "别人渡河我不渡。", "别人渡河我不渡，", "我等我的友人。"],
+    ],
+    10: [
+        ["谷风习习吹来，", "带来阴云细雨。", "曾勉力同其心，", "本不该有怒气。", "采蔓菁采萝卜，", "莫嫌弃其根体。", "好话莫要违背，", "曾约与你同死。"],
+        ["走在路上迟迟，", "心中犹豫不舍。", "送我不远就近，", "只送到门槛边。", "谁说荼菜味苦，", "其实甜如荠菜。", "你欢宴迎新婚，", "亲密如兄如弟。"],
+        ["泾水因渭而浊，", "静止则清见底。", "你欢宴迎新婚，", "不肯把我理睬。", "莫到我的鱼梁，", "莫动我的鱼篓。", "我身不被容纳，", "哪顾我后事？"],
+        ["遇到水深处，", "用筏用舟渡。", "遇到水浅处，", "游泳涉水过。", "家中有无什么，", "我都勉力谋求。", "凡邻里有丧事，", "我爬去救助他。"],
+        ["你不能养爱我，", "反把我当仇敌。", "既拒绝我好意，", "如货卖不出去。", "从前怕穷怕困，", "与你共度艰难。", "如今既已生养，", "却把我比毒虫。"],
+        ["我有甘美储备，", "用来抵御寒冬。", "你欢宴迎新婚，", "用我御你贫穷。", "又凶暴又粗暴，", "留给我苦劳役。", "不念往日情分，", "那时爱我如斯。"],
+    ],
+    11: [
+        ["天色已晚天已晚，", "为何还不回还？", "若非为了君主，", "何故露中辛劳？"],
+        ["天色已晚天已晚，", "为何还不回还？", "若非为了君身，", "何故泥中劳苦？"],
+    ],
+    12: [
+        ["旄丘上的葛藤啊，", "为何藤节那样长？", "叔叔啊伯伯啊，", "为何这么多天？"],
+        ["为何安居不出？必有所助！为何耽搁许久？必有所由！"],
+        ["狐裘毛乱蓬蓬，", "不是车不东行。", "叔叔啊伯伯啊，", "与我志不同道。"],
+        ["渺小啊卑微啊，", "流离失所之人。", "叔叔啊伯伯啊，", "充耳不闻如聋。"],
+    ],
+    13: [
+        ["威武啊威武啊，", "正要跳万舞。", "日头正当中，", "舞者在前列高处。"],
+        ["美人魁梧健壮，", "在公庭跳万舞。", "有力气如猛虎，", "执缰如执丝组。"],
+        ["左手执籥管，", "右手持雉羽。", "脸红如染朱砂，", "公爷赐他酒爵。"],
+        ["山上长着榛树，", "洼地长着苓草。", "我所思是谁？西方的美人。", "那美人啊，", "是西方的人啊。"],
+    ],
+    14: [
+        ["那泉水汩汩流，", "也流入淇水。", "心中怀念卫国，", "没有一天不想。", "那些美好的姊妹，", "且与她们商议。"],
+        ["出嫁宿在泲地，", "在祢地饮饯行。", "女子既已出嫁，", "远离父母兄弟。", "问候我的诸姑，", "又及长姊一人。"],
+        ["出宿在干地，", "饯行在言地。", "涂油安上车轴，", "转身驱车前行。", "疾速抵达卫国，", "岂会有什么害？"],
+        ["我思念肥泉，", "为此长叹不息。", "思念须地与漕，", "我心悠悠难收。", "驾起车去出游，", "以此抒写我忧。"],
+    ],
+    15: [
+        ["从北门走出，", "忧心深重。", "既穷困又清贫，", "无人知我艰难。", "算了吧！原是天意，", "又能说什么呢！"],
+        ["王室差事派我，", "政事一并加给我。", "我从外归来，", "家人都责怪我。", "算了吧！原是天意，", "又能说什么呢！"],
+        ["王室重担压我，", "政事尽数遗给我。", "我从外归来，", "家人都摧折我。", "算了吧！原是天意，", "又能说什么呢！"],
+    ],
+    16: [
+        ["北风那样凉，", "大雪纷纷扬。", "你若惠爱于我，", "携手一同逃亡。", "还犹疑什么？事已急迫啦！"],
+        ["北风那样疾，", "大雪正霏霏。", "你若惠爱于我，", "携手同归隐去。", "还犹疑什么？事已急迫啦！"],
+        ["没有不红的狐，", "没有不黑的乌。", "你若惠爱于我，", "携手同车离去。", "还犹疑什么？事已急迫啦！"],
+    ],
+    17: [
+        ["娴静姑娘真美，", "约我在城角相会。", "故意藏身不见，", "我搔首徘徊不安。"],
+        ["娴静姑娘娇美，", "赠我红管草。", "红管草色鲜明，", "我爱那草之美。"],
+        ["从牧场送我白茅，", "实在美而珍异。", "不是草儿本身美，", "是美人所赠啊。"],
+    ],
+    18: [
+        ["新台那样华美，", "河水宽阔弥漫。", "本求那燕婉佳偶，", "得个癞虾蟆不鲜。"],
+        ["新台那样高峻，", "河水漫漫平满。", "本求那燕婉佳偶，", "得个癞虾蟆不绝。"],
+        ["鱼网张设水中，", "大雁却落其中。", "本求那燕婉佳偶，", "得这驼背之人。"],
+    ],
+    19: [
+        ["两位公子乘船，", "船影飘飘荡荡。", "我长久思念你，", "心中忧思惶惶！"],
+        ["两位公子乘船，", "船儿悠悠远去。", "我长久思念你，", "该不会遇害吧？"],
+    ],
+}
+
+# 逐句对照英文（键为诗 id；结构与 FULLVERSES_TW 对应）
+FULLVERSES_EN = {
+    1: [
+        ["A cypress boat drifts,", "floating upon the stream.", "Sleepless and wakeful,", "as if with hidden care.", "It is not that I lack wine,", "to wander and roam at ease."],
+        ["My heart is not a mirror,", "that takes in all it sees.", "Though I have brothers,", "I cannot lean on them.", "I went to plead my case,", "and met only his wrath."],
+        ["My heart is no stone,", "that it should be rolled away.", "My heart is no mat,", "that it should be rolled up.", "My bearing is composed,", "beyond all compare."],
+        ["My heart is quietly grieved;", "I am resented by the petty.", "Much affliction have I met,", "and no little insult borne.", "In stillness I ponder it,", "and wake to beat my breast."],
+        ["O sun, O moon,", "why do you dim in turn? My heart is sorrowful;", "like unwashed linen.", "In stillness I ponder,", "yet cannot take my flight."],
+    ],
+    2: [
+        ["O robe of green,", "green without, yellow within.", "My heart is full of care;", "when will it ever end?"],
+        ["O robe of green,", "green coat, yellow skirt.", "My heart is full of care;", "when will it pass away?"],
+        ["O threads of green,", "it was you who spun them.", "I think of the dead one,", "who kept me from blame."],
+        ["Fine and coarse cloth,", "chilly in the wind.", "I think of the dead one,", "who truly knew my heart."],
+    ],
+    3: [
+        ["Swallow, swallow, flying;", "with unequal wings.", "That lady goes to her home,", "I see her off far in the wild.", "I look till she is lost,", "my tears fall like rain."],
+        ["Swallow, swallow, flying;", "now up, now down.", "That lady goes to her home,", "I escort her far away.", "I look till she is lost,", "and stand weeping alone."],
+        ["Swallow, swallow, flying;", "its voice rising and falling.", "That lady goes to her home,", "I see her off to the south.", "I look till she is lost,", "and my heart is sore."],
+        ["O my second sister, so steadfast,", "your heart is true and deep.", "Gentle and gracious ever,", "virtuous in all you do.", "Mindful of our late lord,", "you urge me on still."],
+    ],
+    4: [
+        ["O sun, O moon,", "that shine upon the earth,", "there is one such as he,", "who will not treat me as of old.", "How can there be peace? He regards me not."],
+        ["O sun, O moon,", "that overspread the earth,", "there is one such as he,", "who no longer loves me.", "How can there be peace? He repays me not."],
+        ["O sun, O moon,", "that rise in the east,", "there is one such as he,", "whose fame is nothing good.", "How can there be peace? Would I could forget."],
+        ["O sun, O moon,", "that come from the east,", "O father, O mother,", "you reared me but not to the end.", "How can there be peace? His care is unjust."],
+    ],
+    5: [
+        ["At last the wind is wild,", "he smiles when he sees me.", "He teases, laughs, and mocks,", "and in my heart I mourn."],
+        ["At last the wind brings haze,", "yet kindly he came to me.", "But he goes and comes no more,", "and my thoughts drift long."],
+        ["At last the wind is gloomy,", "soon again it darkens.", "Awake, I cannot sleep,", "and thinking of him, I sneeze."],
+        ["Gloomy, gloomy the sky,", "rumbling, rumbling the thunder.", "Awake, I cannot sleep,", "and thinking of him, I long."],
+    ],
+    6: [
+        ["The drums are beaten loud,", "they leap to train for war.", "At home they build the walls,", "but I must march to the south."],
+        ["I follow Sun Zhong,", "to pacify Chen and Song.", "They will not let me home,", "my worried heart is sore."],
+        ["Where to dwell, where to rest? Where is my lost horse? I seek it — beneath the trees."],
+        ["In life and death we parted,", "I made my vow with you.", "I held your hand,", "and said we'd grow old together."],
+        ["Alas, how far apart,", "it keeps me from life with you.", "Alas, how long the parting,", "it keeps me from my pledge."],
+    ],
+    7: [
+        ["The gentle south wind blows,", "upon the thorn's young shoot.", "The shoot grows tender,", "my mother toiled for me."],
+        ["The gentle south wind blows,", "upon the thorn now fuel.", "My mother is good and kind,", "I, unworthy, shame her."],
+        ["There is the cold spring,", "flowing beneath Jun.", "Seven sons have I borne,", "yet my mother's toil is hard."],
+        ["The oriole sings sweet,", "with pleasant voice.", "Seven sons have I borne,", "yet none can comfort her."],
+    ],
+    8: [
+        ["The male pheasant flies,", "slowly spreading plumes.", "He whom I miss,", "has brought me this woe."],
+        ["The male pheasant flies,", "its voice high and low.", "O steadfast gentleman,", "you truly grieve my heart."],
+        ["I gaze at sun and moon,", "my thoughts drift far and long.", "The way is so distant,", "how can he ever come?"],
+        ["You hundred gentlemen,", "you know not virtue's way.", "Free of envy, free of want,", "what then can go amiss?"],
+    ],
+    9: [
+        ["The gourd has bitter leaves,", "the Ji has fords deep.", "Deep, then wade in cloak;", "shallow, then lift the hem."],
+        ["The Ji brims full and wide,", "a pheasant cries shrill.", "Full though it is, not wetting the axle,", "the pheasant calls for her mate."],
+        ["The wild geese honk in pairs,", "the morning sun just risen.", "If a man would wed,", "let him haste ere ice melts."],
+        ["The boatman beckons,", "others cross, not I.", "Others cross, not I,", "I wait for my friend."],
+    ],
+    10: [
+        ["The valley wind blows soft,", "with shade and with rain.", "We strove with one heart,", "you should not have been angry.", "I gathered mustard and radish,", "do not spurn their roots.", "Do not break your pledged word,", "to die together with you."],
+        ["I walked the road so slow,", "my heart loath to part.", "You saw me off not far,", "but to the threshold's start.", "Who says the bitter herb is bitter?", "It is sweet as shepherd's purse to me.", "You feast with your new bride,", "close as brothers in delight."],
+        ["The Jing is muddy by the Wei,", "clear when still at rest.", "You feast with your new bride,", "and will not regard me.", "Do not go to my weir,", "do not disturb my trap.", "My own self is not welcome,", "how care for what's after?"],
+        ["Where the water is deep,", "I ferried with boat and raft.", "Where the water is shallow,", "I swam and waded through.", "What there was or was not,", "I strove to provide.", "When any mourned their dead,", "I crawled to give them aid."],
+        ["You could not cherish me,", "but turned me to a foe.", "You spurned my goodness,", "like goods that would not sell.", "Of old we feared want and need,", "and with you faced downfall.", "Now that we have living,", "you liken me to poison."],
+        ["I have stored sweet provisions,", "to keep out winter's cold.", "You feast with your new bride,", "but used me in your want.", "You stormed and you raged,", "and left me toil and care.", "You forget the days gone by,", "when you came to me with love."],
+    ],
+    11: [
+        ["O dim, dim the light,", "why do you not return?", "But for our lord's sake,", "why stand we in the dew?"],
+        ["O dim, dim the light,", "why do you not return?", "But for our lord's person,", "why stand we in the mire?"],
+    ],
+    12: [
+        ["O bindweed on the hill,", "how long your joints have grown!", "O uncles, O elders,", "why so many days delay?"],
+        ["Why do you linger? You must have allies! Why so long delayed? You must have cause!"],
+        ["In ragged fox-fur coat,", "not that the carts won't go east.", "O uncles, O elders,", "you share not my cause."],
+        ["Small and lowly,", "the wandering refugee.", "O uncles, O elders,", "you stand deaf to my call."],
+    ],
+    13: [
+        ["O grand, O grand,", "now they begin the war-dance.", "The sun is at its height,", "the dancers stand up front."],
+        ["The tall man, stately and strong,", "dances the war-dance in the hall.", "His strength is like a tiger's,", "he holds the reins like plaited silk."],
+        ["In his left hand the flute,", "in his right the pheasant plume.", "Red as if dyed with ochre,", "the lord awards him a cup."],
+        ["On the hill grows the hazel,", "in the lowland grows the lichen.", "Whom do I think of? The beauty of the west.", "That beauty of mine,", "he is a man of the west."],
+    ],
+    14: [
+        ["The bubbling spring waters", "flow on into the Qi.", "I long for the land of Wei,", "not a day without thought.", "O lovely sisters of the Ji,", "with them I take my counsel."],
+        ["I lodged at Ji at departure,", "and drank farewell at Ni.", "A girl once she is wed,", "leaves her parents and brothers far.", "I asked my aunts and kin,", "and then my elder sister too."],
+        ["I lodged at Gan,", "drank farewell at Yan.", "I greased the axle and pin,", "turned the car and set forth.", "Swiftly I'd reach Wei,", "would that be any harm?"],
+        ["I think of the Fei spring,", "and sigh for it ever.", "I think of Xu and Cao,", "my heart drifts far away.", "I drive forth to wander,", "to write out my sorrow."],
+    ],
+    15: [
+        ["I went out by the north gate,", "my worried heart weighed down.", "Ever poor and ever needy,", "none knows my hardship.", "It is done! Heaven has willed it,", "what can I say of it!"],
+        ["The king's affairs fall to me,", "and public duty heaps on me.", "I come home from outside,", "and my household blames me all.", "It is done! Heaven has willed it,", "what can I say of it!"],
+        ["The king's affairs press on me,", "and public duty piles on me.", "I come home from outside,", "and my household crushes me all.", "It is done! Heaven has willed it,", "what can I say of it!"],
+    ],
+    16: [
+        ["The north wind blows so cold,", "snow falls in flurries.", "If you are kind and love me,", "take my hand and flee.", "Why loiter and delay? The peril is at hand!"],
+        ["The north wind blows so shrill,", "snow falls and drifts.", "If you are kind and love me,", "take my hand and go.", "Why loiter and delay? The peril is at hand!"],
+        ["No fox but is red,", "no crow but is black.", "If you are kind and love me,", "take my hand and ride.", "Why loiter and delay? The peril is at hand!"],
+    ],
+    17: [
+        ["The quiet girl is fair,", "she waits for me at the corner.", "She hides and will not show,", "I scratch my head and pace."],
+        ["The quiet girl is lovely,", "she gives me a red-tube grass.", "The red-tube glows bright,", "I delight in its beauty."],
+        ["From the meadow she brought reed-tips,", "truly fair and rare.", "Not that the plant is fair,", "but the giver is fair."],
+    ],
+    18: [
+        ["The new terrace shines bright,", "the river spreads wide.", "She sought a gentle, graceful mate,", "but got a crookback, far from bright."],
+        ["The new terrace stands tall,", "the river flows full.", "She sought a gentle, graceful mate,", "but got a crookback, never to end."],
+        ["A fish-net was spread,", "a goose was caught instead.", "She sought a gentle, graceful mate,", "but gained this hunchback instead."],
+    ],
+    19: [
+        ["Two princes board the boat,", "its shadow drifts and sways.", "Long, long I think of you,", "my heart is full of care!"],
+        ["Two princes board the boat,", "it drifts and fades away.", "Long, long I think of you,", "surely no harm comes your way?"],
+    ],
+}
+
 # 适用场景英文（仅非敏感篇；键为诗 id）
 SCENE_EN = {
     1: "Promotional boards on main thoroughfares, spirit-and-culture display zones, and city-image publicity.",
@@ -1102,10 +1330,33 @@ SCENE_EN = {
     19: "Farewell-themed photo spots, kinship-and-friendship publicity, and wanderer-culture scenes.",
 }
 
+def split_verses(ch):
+    # 按句末标点拆分原文为分句（保留标点）
+    return [x.strip() for x in re.split(r"(?<=[，。；])", ch) if x.strip()]
+
 for _p in POEMS:
     _p["fullNotes"] = FULLNOTES.get(_p["id"], [])
     if not _p.get("sensitive") and _p["id"] in SCENE_EN and "en" in _p:
         _p["en"]["scene"] = SCENE_EN[_p["id"]]
+    # 逐句对照：中文白话 + 英文，按 full 分句顺序自动合并；错位则置空并告警
+    tw = FULLVERSES_TW.get(_p["id"], [])
+    en = FULLVERSES_EN.get(_p["id"], [])
+    full_tr = []  # [{zh, tw, en}]
+    for ci, chapter in enumerate(_p["full"]):
+        parts = split_verses(chapter)
+        tw_ch = tw[ci] if ci < len(tw) else []
+        en_ch = en[ci] if ci < len(en) else []
+        ch_tr = []
+        for ji, orig in enumerate(parts):
+            t = tw_ch[ji] if ji < len(tw_ch) else ""
+            e = en_ch[ji] if ji < len(en_ch) else ""
+            if not t or not e:
+                print(f"[warn] id{_p['id']} 章{ci+1} 句{ji+1} 逐句对照缺失 -> zh='{orig}' tw='{t}' en='{e}'")
+            ch_tr.append({"zh": orig, "tw": t, "en": e})
+        full_tr.append(ch_tr)
+    _p["fullTr"] = full_tr
+    if "en" in _p:
+        _p["en"]["fullTr"] = [[{"zh": x["zh"], "tw": x["tw"], "en": x["en"]} for x in ch] for ch in full_tr]
 
 
 def build():

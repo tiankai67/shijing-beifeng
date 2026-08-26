@@ -213,8 +213,14 @@
     const box = $("#orig-box");
     if (!box || !p) return;
     box.className = "orig " + (mode === "full" ? "mode-full" : "mode-lines");
+    const split = box.closest(".poem-split");
+    if (split) split.classList.toggle("fullmode", mode === "full");
     if (mode === "full") {
-      box.innerHTML = p.full.map((c, i) => `<div class="chap">${chapName(i)}</div><div class="ln">${c}</div>`).join("");
+      const ft = (LANG === "en" ? p.en.fullTr : p.fullTr) || p.fullTr || [];
+      box.innerHTML = ft.map((ch, i) =>
+        `<div class="chap-h">${chapName(i)}</div>` +
+        ch.map((v) => `<div class="vrow"><div class="v-orig">${v.zh}</div><div class="v-tr">${LANG === "en" ? v.en : v.tw}</div></div>`).join("")
+      ).join("");
     } else {
       box.innerHTML = p.lines.map((l) => `<div class="ln">${l}</div>`).join("");
     }

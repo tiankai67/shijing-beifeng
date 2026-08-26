@@ -243,6 +243,10 @@ body{
 
 .poem-split{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start;margin-bottom:30px;}
 @media(max-width:680px){.poem-split{grid-template-columns:1fr;gap:18px;}}
+/* 全文模式：逐句对照自包含，隐藏右侧整段译文，原文区占满 */
+.poem-split.fullmode{grid-template-columns:1fr;}
+.poem-split.fullmode .trans{display:none;}
+.poem-split.fullmode .orig.mode-full{max-height:62vh;}
 .orig{
   font-family:var(--font-kai);color:var(--ink);
   max-height:60vh;overflow:auto;padding:6px 4px;
@@ -264,6 +268,24 @@ body{
   letter-spacing:.1em;margin:18px 0 6px;font-weight:400;
 }
 .orig.mode-full .chap:first-child{margin-top:0;}
+/* 逐句对照 */
+.chap-h{
+  font-family:var(--font-kai);color:var(--cinnabar);font-size:15px;font-weight:600;
+  letter-spacing:.12em;margin:22px 0 8px;padding-left:10px;
+  border-left:3px solid var(--cinnabar);
+}
+.chap-h:first-child{margin-top:0;}
+.vrow{padding:7px 0;border-bottom:1px dashed rgba(122,82,48,.18);}
+.vrow:last-child{border-bottom:0;}
+.v-orig{
+  font-family:var(--font-kai);font-size:20px;line-height:1.6;color:var(--ink);
+  letter-spacing:.04em;
+}
+.v-tr{
+  font-size:14.5px;line-height:1.55;color:#6b5b4d;margin-top:3px;
+  font-family:"PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;
+}
+.v-tr:empty{display:none;}
 .fullnotes{margin-top:18px;border-top:1px dashed rgba(158,43,37,.3);padding-top:16px;}
 .fn-title{font-family:var(--font-kai);color:var(--cinnabar);font-size:15px;letter-spacing:.2em;margin-bottom:10px;}
 .fn-item{display:flex;gap:10px;margin-bottom:8px;font-size:15px;line-height:1.9;color:var(--ink-soft);}
