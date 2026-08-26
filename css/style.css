@@ -269,6 +269,8 @@ body{
 .fn-item{display:flex;gap:10px;margin-bottom:8px;font-size:15px;line-height:1.9;color:var(--ink-soft);}
 .fn-chap{flex:0 0 auto;color:var(--cinnabar);font-family:var(--font-kai);font-size:15px;}
 .fn-text{flex:1;}
+.fn-words{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;padding-left:26px;}
+.fn-words .note-item{display:inline-flex;align-items:baseline;padding:4px 10px;font-size:14px;line-height:1.6;}
 .trans{font-size:17px;line-height:2.1;color:var(--ink-soft);padding-top:6px;text-align:justify;}
 .trans .tlabel{font-family:var(--font-kai);color:var(--cinnabar);font-size:15px;letter-spacing:.2em;display:block;margin-bottom:6px;}
 

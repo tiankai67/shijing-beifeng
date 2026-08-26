@@ -130,9 +130,10 @@
       : `<p class="appr">${T("label_notes")}…</p>`;
 
     const warn = p.sensitive ? `<span class="warn">${T("warn_prefix")}${p.note || ""}</span>` : "";
-    // 适用场景：仅非敏感篇展示
-    const sceneHtml = (!p.sensitive && p.scene)
-      ? `<div class="block"><h4><span class="bar"></span>${T("label_scene")}</h4><p class="scene">${p.scene}</p></div>`
+    // 适用场景：仅非敏感篇展示；英文模式取 en.scene
+    const sceneText = (LANG === "en" && p.en && p.en.scene) ? p.en.scene : p.scene;
+    const sceneHtml = (!p.sensitive && sceneText)
+      ? `<div class="block"><h4><span class="bar"></span>${T("label_scene")}</h4><p class="scene">${sceneText}</p></div>`
       : "";
 
     body.innerHTML = `
@@ -197,9 +198,15 @@
   function fullNotesHtml(p) {
     const fn = p.fullNotes || [];
     if (!fn.length) return "";
-    return `<div class="fullnotes"><div class="fn-title">${T("label_fullnotes")}</div>` +
-      fn.map((t, i) => `<div class="fn-item"><span class="fn-chap">${chapName(i)}</span><span class="fn-text">${t}</span></div>`).join("") +
-      `</div>`;
+    const wmean = (w) => (LANG === "en" ? (w.em || w.m) : w.m);
+    const items = fn.map((c, i) => {
+      const text = LANG === "en" ? (c.en || c.zh) : c.zh;
+      const words = (c.words && c.words.length)
+        ? `<div class="fn-words">${c.words.map((w) => `<span class="note-item"><b>${w.w}</b><span class="p">${w.p}</span>　${wmean(w)}</span>`).join("")}</div>`
+        : "";
+      return `<div class="fn-item"><span class="fn-chap">${chapName(i)}</span><span class="fn-text">${text}</span>${words}</div>`;
+    }).join("");
+    return `<div class="fullnotes"><div class="fn-title">${T("label_fullnotes")}</div>${items}</div>`;
   }
   function showView(mode) {
     const p = curPoem;
